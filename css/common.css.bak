@@ -1,0 +1,424 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+
+.cfx:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+body{
+	font-size:75%;
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',Osaka,sans-serif;
+}
+
+a{
+	text-decoration:none;
+}
+
+/*-------------------------------
+header
+-------------------------------*/
+
+header{
+	width:990px;
+	margin:10px auto;
+}
+
+header h1{
+	float:left;
+}
+
+/*-------------------------------
+nav globalnav
+-------------------------------*/
+nav{
+}
+
+nav ul{
+	width:990px;
+	margin:0 auto;
+}
+
+nav li{
+	float:left;
+}
+
+/*-------------------------------
+globalnav
+-------------------------------*/
+nav #globalnav li{
+	float:left;
+	margin-left:10px;
+}
+	nav #globalnav li:first-child{
+		margin-left:0;
+	}
+	nav #globalnav li:last-child{
+		margin-rignt:0;
+	}
+nav  li:hover{
+	opacity:0.7;
+}
+	
+
+/*-------------------------------
+article
+-------------------------------*/
+
+article{
+	width: 990px;
+    margin: 0 auto;
+    background: none;
+    padding-top: 5px;
+}
+
+article #no1{
+}
+
+article #no1 #Text{
+	margin:20px 0;
+}
+
+article #no1 #Text p{
+	text-align:center;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:120%;
+	font-weight:bold;
+	line-height:2;
+}
+
+article #no1 #Text p#click{
+	margin-top:20px;
+}
+
+article #no2 nav{
+	width:100%;
+	margin-bottom:20px;
+}
+
+article #no2 nav ul{
+}
+
+article #no2 nav ul li{
+	margin-right:19px;
+}
+
+article #no2 nav ul li:last-child{
+	margin:0;
+}
+
+
+article #no2 #slider{
+	position:relative;
+}
+
+article #no2 .swiper-slide{
+	width:990px;
+	height:430px;
+}
+
+article #no2 .swiper-slide .slider-box{
+	width:770px;
+	height:300px;
+	padding:90px 110px 40px 110px;
+}
+
+article #no2 .swiper-slide .slider-box h2{
+	margin-bottom:40px;
+	font-size:1.5em;
+	font-weight:bold;
+	line-height:1.3em;
+	color:#fff;
+}
+
+article #no2 .swiper-slide .slider-box p{
+	margin-bottom:20px;
+	line-height:1.5;
+	color:#fff;
+}
+
+article #no2 .swiper-slide .slider-box p.link{
+	float:right;
+}
+
+article #no2 .swiper-slide .slider-box p.link a{
+	padding-left:15px;
+	text-decoration:none;
+	line-height:9px;
+	color:#fff;
+}
+
+article #no2 .swiper-slide .slider-box p.link a:hover{
+	text-decoration:underline;
+}
+
+article #no2 .swiper-slide .slider-box p:last-child{
+	margin-bottom:0;
+}
+
+article #no2 .swiper-slide .slider-box #boxin #boxinColL{
+	width:470px;
+	margin-right:20px;
+	float:left;
+}
+
+article #no2 .swiper-slide .slider-box #boxin #boxinColR{
+	width:277px;
+	float:right;
+}
+
+
+article #no2 #slider #side1{
+	background-image:url(../image/About%20the%20WEC1.png);
+}
+
+article #no2 #slider #side2{
+	background-image:url(../image/About%20the%20WEC2.png);
+}
+
+article #no2 #slider #side3{
+	background-image:url(../image/About%20the%20WEC3.png);
+}
+
+article#no3-art{
+	padding:30px;
+}
+
+
+article h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.3em;
+	color: #e60012;
+
+}
+/* section3  */
+section#no3{
+	height:auto;
+	    margin-bottom: 40px;
+}
+section#no3-sec{
+	padding:30px;
+	clear:both;
+}
+article img{
+}
+
+article p img{     
+	max-width: none;
+    height: auto;
+}
+/* section3  */
+section#no3{
+	height:auto;
+	    margin-bottom: 40px;
+}
+section#no3-sec{
+	padding:30px;
+	clear:both;
+}
+
+
+section#no3-sec h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.3em;
+	color: #e60012;
+	margin-bottom: 20px;
+
+}
+section#no3-sec .ColL{
+	width:217px;
+	float:left;
+	margin-right: 20px;
+}
+section#no3-sec .ColR{
+	width:693px;
+	float:left;
+	margin-bottom: 20px;
+}
+section#no3 img{
+    max-width: none;
+    height: auto;	
+}
+
+section .ColL p img{     
+	max-width: none;
+    height: auto;
+}
+
+section#no3 p{
+    margin-bottom: 20px;
+	line-height:20px;
+}
+
+section#no4{
+	clear:both;
+}
+
+/* section4 jquery  */
+section#no4 #acMenu dt{
+    display:block;
+	border-top:4px solid #e60012;
+	height:30px;
+	line-height:30px;
+	padding:20px;
+	background-image:url(../image/role_arrow_down.png);
+	background-repeat:no-repeat;
+	background-position:right bottom;
+	background-position:97% 50%;
+	clear:both;
+    }
+	
+	section#no4 #acMenu dt.active{
+		background-color:#e7e7e7;
+		background-image:url(../image/role_arrow_up.png);
+		background-repeat:no-repeat;
+		background-position:right bottom;
+		background-position:97% 50%;
+	}
+
+	section#no4 #acMenu dt h3{
+		background-image:url(../image/role_circle_red.png);
+		background-repeat:no-repeat;
+		background-position:0 5px;
+		padding-left:25px;
+    }
+	
+		section#no4 #acMenu dd{
+			display:none;
+			margin-top:20px;
+			margin-bottom:20px;
+			}
+		
+		section#no4 #acMenu dd .textL{
+			width:450px;
+			float:left;
+			margin:0 20px;
+			box-sizing:border-box;
+		}
+		
+		section#no4 #acMenu dd .textL p{
+			margin-bottom: 20px;
+			line-height:20px;
+		}
+		section#no4 #acMenu dd .textL h4{
+			color: #e60012;
+			font-weight: bold;
+			margin-bottom:15px;
+		}
+		
+		section#no4 #acMenu dd .textR{
+			max-width:100%;
+			margin-left:20px;
+			float:left;
+		}
+		section#no4 #acMenu dd .textR p img{
+			margin-bottom:20px;
+		}
+		section#no4 #acMenu dd .textR h4{
+			margin-bottom:10px;
+		}
+
+/* section5 スケジュール */
+section#no5 .schedule {
+    color: #000000;
+    background-color: #1d1b57;
+    padding-bottom: 20px;
+	clear:both;
+	margin-top:-20px;
+}
+
+.schedule:after {
+    content: "";
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+	section#no5 .schedule h2{
+		color:#fff;
+		font-size:18px;
+		padding:20px;
+	}
+	
+	section#no5 .schedule .scheduleDetail{
+		width:220px;
+		padding-left:20px;
+		margin-bottom:5px;
+		border-right:1px #00a1e9 solid;
+		float:left;
+	}
+	
+	section#no5 .schedule .scheduleDetail:nth-child(4n+1){
+		border-right:none;
+	}
+	section#no5 .schedule .scheduleDetail h3{
+		font-size:1.25em;
+		line-height:1.25em;
+		color:#1895ff;
+	}
+	section#no5 .schedule .scheduleDetail p{
+		color:#fff;
+		height:24px;
+	}
+	section#no5 a:hover{
+		opacity:0.7;
+	}
+
+/* パンくずリスト */
+.pankuzu{
+	padding:10px;
+}
+	.pankuzu ol li {
+			display: inline;
+			list-style-type: none;
+	}
+	
+	.pankuzu ol li:before {
+			content: " > ";
+	}
+
+
+	.pankuzu ol li:first-child:before {
+			content: none;
+	}
+	
+		.pankuzu ol li a.active{
+			color:#000;
+		}
+
+/* banner */
+#banner .banner_nav nav{
+	display:block;
+	width:990px;
+	margin:0 auto;
+	background-color:#ddd;
+}
+	#banner .banner_nav ul {
+		width:990px;
+		padding: 0;
+		list-style-type: none;
+	}
+	 
+	#banner .banner_nav ul li {
+		display: inline-block;
+		list-style-type: none;
+		text-align: center;
+		margin:14px 0 14px 14px;
+	}
+    * html li { display: inline; }
+    *:first-child+html li { display: inline; }
+ 
+/* footer */
+footer{
+	width:990px;
+	margin:0 auto;
+	text-align:right;
+}
+	footer p{
+		padding:10px 0;
+	}
