@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* フェードイン */
+.fade {
+  opacity: 0;
+  transition: 2.5s;
+}
+
+.in {
+  opacity: 1;
+}
+
+/* 背景固定 */
+/* スクロールコンテンツ */
+article {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+article div#MainContent1 {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+  /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+  z-index: 1;
+  background-image: url(../images/bg.png);
+}
+article div#MainContent1 div#Content1_1 {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+article div#MainContent1 div#Content1_1 h1 {
+  margin-top: 10%;
+  font-size: 4em;
+  color: #fff;
+  text-align: center;
+}
+article div#MainContent2 {
+  position: relative;
+  min-height: 100%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  padding: 5em;
+  color: #000;
+  background-color: #fff;
+}
+article div#MainContent2 div.Content2-Box h2 {
+  font-size: 2.5em;
+}
+article div#MainContent2 div.Content2-Box div.Content2-Text {
+  margin: 2em;
+  padding: 3em;
+  font-size: 1.3em;
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  text-align: center;
+}
+article div#MainContent2 div.Content2-Box div.Content2-Text p {
+  margin: 20px;
+}
+article div#MainContent3 {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+  /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+  z-index: 1;
+  padding: 5em;
+  background-image: url(../images/bg-1.png);
+}
+article div#MainContent3 div.Content3-Box {
+  color: #fff;
+}
+article div#MainContent3 div.Content3-Box h2 {
+  font-size: 2.5em;
+}
+article div#MainContent3 div.Content3-Box div.Content3-Text {
+  margin: 2em;
+  padding: 3em;
+  font-size: 1.3em;
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.35);
+}
+article div#MainContent3 div.Content3-Box div.Content3-Text p {
+  margin: 20px;
+}
+article div#MainContent4 {
+  position: relative;
+  min-height: 100%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  padding: 5em;
+  background-color: rgba(8, 99, 5, 0.5);
+}
+article div#MainContent4 div.Content4-Box {
+  color: #000;
+}
+article div#MainContent4 div.Content4-Box h2 {
+  font-size: 2.5em;
+}
+article div#MainContent4 div.Content4-Box div.Content4-Text {
+  margin: 2em;
+  padding: 3em;
+  font-size: 1em;
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+}
+article div#MainContent4 div.Content4-Box div.Content4-Text ul {
+  margin: 30px 0 0 50px;
+}
+article div#MainContent4 div.Content4-Box div.Content4-Text ul li {
+  padding: 10px !important;
+  border-bottom: 2px dotted #666;
+}
+article div#MainContent4 div.Content4-Box div.Content4-Text ul li span.day {
+  cursor: pointer;
+  color: #000;
+  transition: all 1s;
+}
+article div#MainContent4 div.Content4-Box div.Content4-Text ul li span.day:hover {
+  color: #fff;
+  background-color: #000;
+  opacity: 0.7;
+}
+article div#MainContent4 div.Content4-Box div.Content4-Text ul li span.day span.newTitle {
+  margin-left: 5%;
+}
+article div#MainContent4 div.Content4-Box div.Content4-Text ul li p.textArea {
+  display: none;
+  padding: 10px 10px 30px 50px !important;
+  color: #000;
+}
+article div#MainContent5 {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+  /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+  z-index: 1;
+  padding: 5em;
+  background-image: url(../images/bg-1.png);
+}
+article div#MainContent5 div.Content5-Box {
+  color: #fff;
+}
+article div#MainContent5 div.Content5-Box h2 {
+  font-size: 2.5em;
+}
+article div#MainContent5 div.Content5-Box div.Content5-Text {
+  margin: 1em;
+  padding: 2em;
+  font-size: 1.3em;
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  border-radius: 5px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.35);
+}
+article div#MainContent5 div.Content5-Box div.Content5-Text a {
+  width: 75px;
+  height: 75px;
+  text-decoration: none;
+}
+article div#MainContent5 div.Content5-Box div.Content5-Text a img {
+  margin: 2px;
+  padding: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: all 1s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+  background-color: #fff;
+}
+article div#MainContent5 div.Content5-Box div.Content5-Text a img:hover {
+  opacity: 1.0;
+}
+article div#MainContent6 {
+  position: relative;
+  min-height: 100%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  padding: 5em;
+  background-color: rgba(72, 0, 130, 0.6);
+}
+article div#MainContent6 div.Content6-Box {
+  color: #000;
+}
+article div#MainContent6 div.Content6-Box h2 {
+  font-size: 2.5em;
+}
+article div#MainContent6 div.Content6-Box div.Content6-Text {
+  margin: 2em;
+  padding: 3em;
+  font-size: 1em;
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+}
