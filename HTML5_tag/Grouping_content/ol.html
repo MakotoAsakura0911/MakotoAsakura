@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>ol</h1>
+				<div id="box">
+					<p>
+						&lt;ol&gt;タグはordered listの略で、順序のあるリストを表示する際に使用します。 リスト項目は、&lt;li&gt;タグで指定します。
+					</p>
+					<p>
+						&lt;ol&gt;タグで作成されるのは順序のあるリストなので、リスト項目の順序を変えると文書の意味が変わってしまうはずです。 順序のないリストを作成する際には&lt;ul&gt;タグを使用してください。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						HTML4.01では、ol要素にはtype属性が用意されており、リストの先頭記号（リストマーカー）の種類として、 算用数字（1,2,3,…）・アルファベット小文字（a,b,c,…）・ アルファベット大文字（A,B,C,…）・ローマ数字小文字（ⅰ,ⅱ,ⅲ,…）・ ローマ数字大文字（Ⅰ,Ⅱ,Ⅲ,…） を指定することができました。
+					</p>
+					<p>
+						HTML5では、ol要素のtype属性は廃止されています。 リストマーカーのスタイルを指定する際には、 CSSのlist-style-typeプロパティを使用してください。 例えば、大文字のローマ数字（Ⅰ,Ⅱ,Ⅲ,…）なら以下のように記述します。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;ol&gt;
+						&lt;li&gt;いちご&lt;/li&gt;
+						&lt;li&gt;人参&lt;/li&gt;
+						&lt;li&gt;サンダル&lt;/li&gt;
+						&lt;/ol&gt;
+
+						&lt;ol start=&quot;5&quot;&gt;
+						&lt;li&gt;ゴリラ&lt;/li&gt;
+						&lt;li&gt;ロケット&lt;/li&gt;
+						&lt;li&gt;菜の花&lt;/li&gt;
+						&lt;/ol&gt;
+
+						&lt;ol reversed=&quot;reversed&quot; start=&quot;10&quot;&gt;
+						&lt;li&gt;ジュゴン&lt;/li&gt;
+						&lt;li&gt;鯨&lt;/li&gt;
+						&lt;li&gt;蜂&lt;/li&gt;
+						&lt;/ol&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="robots" content="nofollow">
+		<title></title>
+
+		<link rel="stylesheet" href="../css/common.css" type="text/css" />
+		<link rel="stylesheet" href="../css/style.css">
+		<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+		<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+		<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+		<script src="js/jquery-1.11.3.min.js" /></script>
+		<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+		<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+		<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+		<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+		<script type="text/javascript">
+		SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+		SyntaxHighlighter.config.strings.expandSource = 'ソース';
+		SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+		SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+		SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+		SyntaxHighlighter.config.strings.print = 'プリンタ';
+		SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+		SyntaxHighlighter.all();
+		SyntaxHighlighter.defaults['auto-links'] = false;
+		</script>
+
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>div</h1>
+				<div id="box">
+					<p>
+						&lt;div&gt;タグは、ひとかたまりの範囲として定義する際に使用します。 &lt;div&gt;には特別な意味はありませんが、 &lt;div&gt;～&lt;/div&gt;で囲まれた範囲を一つのグループとしてまとめることができます。 ページレイアウトやスタイリングを指定する際に、CSSを適用するためのコンテナ要素として使用されることの多いタグです。
+					</p>
+					<p>
+						&lt;div&gt;は大変便利なタグですが、他に適切な要素が無い場合の最終手段として使用することが強く推奨されています。 より適切な要素があるにも関わらず&lt;div&gt;を使用していると、 ウェブページのアクセシビリティやメンテナンス性が低下してしまうからです。
+					</p>
+					<p>
+						例えば、ブログの投稿には&lt;article&gt;、 章の区切りには&lt;section&gt;、 ページのナビゲーションには&lt;nav&gt;、 フォームグループには&lt;fieldset&gt; を使用してマークアップするべきでしょう。
+					</p>
+					<p>
+						一方で、&lt;div&gt;はスタイリング目的の場合や、 class属性・lang属性・title属性などの属性で複数の要素に同じ値をまとめて指定する場合には便利でしょう。 以下の使用例は、二つの段落を&lt;div&gt;でくくってCSSによるスタイリングをまとめて指定しています。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						HTML4.01では、div要素には揃え位置を指定するalign属性が、非推奨とされながらも用意されていました。 HTML5では、div要素のalign属性は廃止されています。 揃え位置の指定にはCSSを使用してください。
+					</p>
+					<p>
+						また、HTML5では &lt;article&gt;・ &lt;aside&gt;・ &lt;nav&gt;・ &lt;section&gt; などの新しい要素が追加されているので、 これらの新しい要素のほうが&lt;div&gt;よりも適切なケースがあるかもしれません。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;article&gt;
+						&lt;h1&gt;我が家の猫たち&lt;/h1&gt;
+						&lt;p&gt;うちには二匹の猫がいます。名前はシロとクロ。兄弟なのに毛の色も性格も正反対です。&lt;/p&gt;
+						&lt;div style=&quot; background-color:black; color:white;&quot;&gt;
+						&lt;p&gt;シロは真っ白です。おっとりしていますが、暖かいパソコンの上に乗ってきて仕事の邪魔をするのが日課です。&lt;/p&gt;
+						&lt;p&gt;クロは真っ黒です。やんちゃでいつも走り回っています。ドアを開けてやると鉄砲玉のように飛び出します。&lt;/p&gt;
+						&lt;/div&gt;
+						&lt;p&gt;二匹ともご飯の時間にはすり寄ってきます。&lt;/p&gt;
+						&lt;/article&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="robots" content="nofollow">
+		<title></title>
+
+		<link rel="stylesheet" href="../css/common.css" type="text/css" />
+		<link rel="stylesheet" href="../css/style.css">
+		<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+		<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+		<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+		<script src="js/jquery-1.11.3.min.js" /></script>
+		<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+		<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+		<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+		<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+		<script type="text/javascript">
+		SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+		SyntaxHighlighter.config.strings.expandSource = 'ソース';
+		SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+		SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+		SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+		SyntaxHighlighter.config.strings.print = 'プリンタ';
+		SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+		SyntaxHighlighter.all();
+		SyntaxHighlighter.defaults['auto-links'] = false;
+		</script>
+
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>figure</h1>
+				<div id="box">
+					<p>
+						&lt;figure&gt;タグは、図表であることを示す際に使用します。 ここで言う図表とは、文書の本文（メインフロー）から参照されるようなイラスト・図・写真・ソースコードなどのことです。
+					</p>
+					<p>
+						図表は本文から参照される内容ですが、本文に影響を与えることなく、ページの端・専用ページ・別表にして切り離すことができます。
+					</p>
+					<p>
+						必要ならば、図表にキャプションや注釈を付けても良いでしょう。図表にキャプションを付ける場合には、&lt;figcaption&gt;タグを使用します。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						figure要素は、HTML5から新たに追加された要素です。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;p&gt;カエルの生態に関しては、&lt;a href=&quot;#kaeru&quot;&gt;こちらの画像&lt;/a&gt;でご確認いただけます。&lt;/p&gt;
+
+						&lt;figure id=&quot;kaeru&quot;&gt;
+						&lt;img src=&quot;../images/kaeru.gif&quot; alt=&quot;葉っぱを傘代わりにするカエル&quot;&gt;
+						&lt;figcaption&gt;カエルの生態&lt;/figcaption&gt;
+						&lt;/figure&gt;
+
+						&lt;p&gt;カエルは雨降りが好きなので&hellip;&lt;/p&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

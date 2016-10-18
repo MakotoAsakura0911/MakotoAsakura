@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>hr</h1>
+				<div id="box">
+					<p>
+						&lt;hr&gt;タグは、段落レベルのテーマの区切り、セクション内における話題の区切りを表す際に使用します。 例えば、物語におけるシーンの変わり目や、参考書のセクション内で別の話題に移る箇所などです。
+					</p>
+					<p>
+						セクション同士の区切りとなる &lt;/section&gt;と&lt;section&gt; の間については、すでにそれ自体でテーマの区切りを表しているので、 &lt;hr&gt; を挿入する必要はありません。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						HTML4.01ではhr要素には非推奨とされながらもalign属性・noshade属性・size属性・width属性が用意されていました。 HTML5ではこれらの属性はすべて廃止されています。
+					</p>
+					<p>
+						また、hr要素は、HTML 4.01では水平線（horizontal rule）が描画されると定義されていますが、 HTML5ではテーマ・話題の区切りを表す要素であり、水平線の定義はありません。 ただし、一般的なブラウザではHTML5の文書でhr要素を使用した場合にも、当面は今まで通り水平線が描画されると思われます。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;p&gt;吾輩は猫である。名前はまだ無い。&lt;/p&gt;
+						&lt;p&gt;どこで生れたかとんと見当がつかぬ。
+						何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。&lt;/p&gt;
+						&lt;hr&gt;
+						&lt;p&gt;吾輩はここで始めて人間というものを見た。
+						しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。
+						この書生というのは時々我々を捕えて煮て食うという話である。&lt;/p&gt;
+						&lt;p&gt;しかしその当時は何という考もなかったから別段恐しいとも思わなかった。
+						ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。&lt;/p&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

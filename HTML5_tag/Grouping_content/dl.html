@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>dl</h1>
+				<div id="box">
+					<p>
+						&lt;dl&gt;タグは、定義・説明リストを表す際に使用します。 &lt;dl&gt;～&lt;/dl&gt;の中に、 &lt;dt&gt;タグで定義・説明される言葉を、 &lt;dd&gt;タグでそれに対応する説明を配置してリストを作成します。 例えば、用語の定義リストを作成したり、何かの手順を箇条書きで説明する場合などに使用します。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						&lt;dl&gt;タグのdlの由来ですが、HTML4.01ではdefinition list（定義リスト）の意味であることが示されていました。 HTML5でははっきりとは示されていませんが、description list（説明リスト）という程度の意味のようです。 また、 &lt;dt&gt;タグはdefinition term（定義される言葉）からdescription term（説明される言葉）へ、 &lt;dd&gt;タグはdefinition description（定義の説明）からdescription, definition（説明や定義）へと、微妙にニュアンスが変更されているようです。
+					</p>
+					<p>
+						HTML5では、&lt;dl&gt;～&lt;/dl&gt;の中の&lt;dt&gt;と&lt;dd&gt;は、必ずしも一対一である必要はありません。 以下の使用例では、 一つの定義（dt）に対して複数の説明（dd）をしたり、 複数の定義（dt）に対して一つの説明（dd）をしています。
+					</p>
+
+					<h3>●使用例１</h3>
+					<pre class="brush: html;">
+						&lt;dl&gt;
+						&lt;dt&gt;作者&lt;/dt&gt;
+						&lt;dd&gt;ジョン&lt;/dd&gt;
+						&lt;dd&gt;ポール&lt;/dd&gt;
+						&lt;dd&gt;ジョージ&lt;/dd&gt;
+						&lt;dd&gt;リンゴ&lt;/dd&gt;
+						&lt;/dl&gt;
+
+						&lt;dl&gt;
+						&lt;dt lang=&quot;ja&quot;&gt;&lt;dfn&gt;色&lt;/dfn&gt;&lt;/dt&gt;
+						&lt;dt lang=&quot;en-US&quot;&gt;&lt;dfn&gt;color&lt;/dfn&gt;&lt;/dt&gt;
+						&lt;dt lang=&quot;en-GB&quot;&gt;&lt;dfn&gt;colour&lt;/dfn&gt;&lt;/dt&gt;
+						&lt;dd&gt;可視光線の波長の長短によって人が視覚で感じ分けられる色覚・色刺激のこと。&lt;/dd&gt;
+						&lt;/dl&gt;
+					</pre>
+
+					<h3>●使用例２</h3>
+					<pre class="brush: html;">
+						&lt;p&gt;ゲームの得点は以下の順序で計算されます。&lt;/p&gt;
+						&lt;dl&gt;
+						&lt;dt&gt;金貨を獲得している場合&lt;/dt&gt;
+						&lt;dd&gt;金貨一枚につき１０ポイント加算されます。&lt;/dd&gt;
+						&lt;dt&gt;銀貨を獲得している場合&lt;/dt&gt;
+						&lt;dd&gt;銀貨一枚につき１ポイント加算されます。&lt;/dd&gt;
+						&lt;dt&gt;枚数に関わらず、金貨と銀貨の両方を獲得してる場合&lt;/dt&gt;
+						&lt;dd&gt;ボーナスポイントとして２０ポイント加算されます。 &lt;/dd&gt;
+						&lt;dt&gt;それ例外の場合&lt;/dt&gt;
+						&lt;dd&gt;ポイントは加算されません。&lt;/dd&gt;
+						&lt;/dl&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

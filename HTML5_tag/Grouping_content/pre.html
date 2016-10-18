@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>pre</h1>
+				<div id="box">
+					<p>
+						&lt;pre&gt;タグは、半角スペースや改行をそのまま表示する際に使用します。 &lt;pre&gt;とはpreformatted textの略で、日本語では「フォーマット（整形）済みのテキスト」という意味になります。 つまり、見やすいように半角スペースや改行などで形が整えられたテキストのことです。
+					</p>
+					<p>
+						&lt;pre&gt;～&lt;/pre&gt;で囲まれた範囲のソースは 半角スペース・改行などがそのまま表示されるため、 &lt;pre&gt;タグは、HTMLソースやプログラムのソースコードをそのまま表示したり、 アスキーアートを表示する場合などに使用されます。
+					</p>
+					<p>
+						ただし、&lt;pre&gt;～&lt;/pre&gt;の中でもタグは解釈されるため、 HTMLソースをそのまま表示したい場合には、&lt; と &gt; を、&amp;lt; と &amp;gt; に置き換える必要があります。 また、HTML構文の中では、&lt;pre&gt;の開始タグの直後の改行は取り除かれるので注意してください。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						HTML4.01ではpre要素には非推奨とされながらもwidth属性が用意されていましたが、 HTML5では廃止されています。
+					</p>
+					<p>
+						また、HTML5ではpre要素を使用する際には、半角スペースや改行などのフォーマット（整形）を失ってしまう場合に配慮することが推奨されています。 例えば、音声機器や点字ディスプレイで利用される場合や、アスキーアートが半角スペースや改行で整形されない場合などです。 このような状況が想定されるなら、テキスト説明などの何らかの代替手段を用意しておくほうがアクセシビリティーが高まるでしょう。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;pre&gt;
+								もしもし　かめよ　かめさんよ
+								せかいのうちで　おまえほど
+								あゆみの　のろい　ものはない
+								どうして　そんなに　のろいのか
+
+								なんと　おっしゃる　うさぎさん
+								そんなら　おまえと　かけくらべ
+								むこうの　おやまの　ふもとまで
+								どちらが　さきに　かけつくか
+						&lt;/pre&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

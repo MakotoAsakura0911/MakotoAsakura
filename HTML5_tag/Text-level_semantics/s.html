@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>s</h1>
+				<div id="box">
+					<p>
+						&lt;s&gt;タグは、すでに正確ではなくなった、すでに関係なくなった内容を表す際に使用します。
+					</p>
+					<p>
+						&lt;s&gt;は、文書の編集を表す際に使用するのは適切ではないとされています。 削除されたテキスト箇所を表す場合には、&lt;s&gt;ではなく&lt;del&gt;を使用してください。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						s要素は、HTML4.01では「テキストに打ち消し線を引く要素」として定義されていました。 HTML5では「すでに正確ではなくなった・関係なくなった内容を表す要素」とされ、 単なるスタイリング要素から意味のある要素に変更されています。
+					</p>
+					<p>
+						以下の使用例は、商品に新しい特別価格が付けられたという内容です。 通常価格の部分を&lt;s&gt;～&lt;/s&gt;で囲んでいますが、 このマークアップは&ldquo;通常価格がすでに関係無くなっている&rdquo;という意味を表しています。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;p&gt;缶コーヒーがお買い得！&lt;/p&gt;
+						&lt;p&gt;&lt;s&gt;通常価格: 1本100円&lt;/s&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;特別価格：1本59円！！&lt;/strong&gt;&lt;/p&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

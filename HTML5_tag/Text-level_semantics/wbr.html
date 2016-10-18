@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>wbr</h1>
+				<div id="box">
+					<p>
+						&lt;wbr&gt;タグは、改行しても良い位置を示す際に使用します。
+					</p>
+					<p>
+						wbr要素の内容は、その前後のテキストの一部とは見なされません。 例えば、「アグリゲイティバクター・アクチノミセテムコミタンス」という言葉が長いからといって、 「アグリゲイティバクター・&lt;wbr&gt;アクチノミセテムコミタンス」のように指定してしまうと、 改行の前後がそれぞれ別の言葉として解釈されてしまうかもしれません。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						&lt;wbr&gt;は、もともとはNetscape Navigator独自の要素で、 HTML4.01の仕様には取り入れられていませんが、すでに一部のブラウザでサポートされています。 HTML5では、標準仕様として採用される予定です。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;p&gt;
+						&lt;b&gt;wbr要素なしの場合&lt;/b&gt;&lt;br&gt;
+						SheSellsSeaShellsByTheSeashore.TheShellsSheSellsAreSurelySeashells.SoIfSheSellsShellsOnTheSeashore,I&#039;mSureSheSellsSeashoreShells.
+						&lt;/p&gt;
+						&lt;p&gt;
+						&lt;b&gt;wbr要素ありの場合&lt;/b&gt;&lt;br&gt;
+						She&lt;wbr&gt;Sells&lt;wbr&gt;Sea&lt;wbr&gt;Shells&lt;wbr&gt;By&lt;wbr&gt;The&lt;wbr&gt;Seashore.&lt;wbr&gt;The&lt;wbr&gt;Shells&lt;wbr&gt;She&lt;wbr&gt;Sells&lt;wbr&gt;Are&lt;wbr&gt;Surely&lt;wbr&gt;Seashells.&lt;wbr&gt;So&lt;wbr&gt;If&lt;wbr&gt;She&lt;wbr&gt;Sells&lt;wbr&gt;Shells&lt;wbr&gt;On&lt;wbr&gt;The&lt;wbr&gt;Seashore,&lt;wbr&gt;I&#039;m&lt;wbr&gt;Sure&lt;wbr&gt;She&lt;wbr&gt;Sells&lt;wbr&gt;Seashore&lt;wbr&gt;Shells.
+						&lt;/p&gt;
+						&lt;p&gt;
+						&lt;b&gt;ちなみに意味は&hellip;&lt;/b&gt;&lt;br&gt;
+						彼女は海岸の近くで海の貝殻を売っている。彼女が売っている貝殻はきっと海の貝殻だ。もし彼女が海岸で貝殻を売っているなら、彼女は海岸の貝殻を売っているに違いない。
+						&lt;/p&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

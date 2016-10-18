@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>dt</h1>
+				<div id="box">
+					<p>
+						&lt;dt&gt;タグは、定義・説明される言葉を表す際に使用します。 例えば、定義用語・名前・何らかの説明をする際の説明の前半部分などです。 定義・説明リストを作成する際には、 &lt;dl&gt;～&lt;/dl&gt;の中に、 &lt;dt&gt;タグで定義・説明される言葉を、 &lt;dd&gt;タグでそれに対応する説明を配置してリストを作成します。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						HTML4.01ではdt要素は定義語（definition term）を表す要素でしたが、 HTML5では定義語だけに限定されておらず、説明される言葉（description term）という程度の意味になっています。 定義語リストを作成する場合には、&lt;dt&gt;～&lt;/dt&gt;の中に配置する言葉を &lt;dfn&gt;～&lt;dfn&gt;で囲むことで、その言葉が定義語であることが明確になります。
+					</p>
+					<p>
+						以下の使用例は、定義語リストではありません。 &ldquo;よくある質問&rdquo;のリストを作成したものですが、質問に&lt;dt&gt;、回答に&lt;dd&gt;を使用しています。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;article&gt;
+						&lt;h1&gt;よくある質問&lt;/h1&gt;
+						&lt;dl&gt;
+						&lt;dt&gt;このマンションでは、室内で犬を飼うことはできますか？&lt;/dt&gt;
+						&lt;dd&gt;小型犬１頭に限り飼うことができます。申請が必要となります。&lt;/dd&gt;
+						&lt;dt&gt;小型犬とはどの程度の大きさですか？&lt;/dt&gt;
+						&lt;dd&gt;犬種ではチワワ・ポメラニアン・柴犬などです。&lt;/dd&gt;
+						&lt;dt&gt;どのように申請するのですか？&lt;/dt&gt;
+						&lt;dd&gt;管理事務所に申請用紙をご用意しています。&lt;/dd&gt;
+						&lt;/dl&gt;
+						&lt;/article&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

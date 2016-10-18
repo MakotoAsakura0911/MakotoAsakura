@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>span</h1>
+				<div id="box">
+					<p>
+						&lt;span&gt;タグは、ひとつの範囲として定義する際に使用します。
+					</p>
+					<p>
+						&lt;span&gt;はそれ自身では何も意味を持っていませんが、style属性・class属性・lang属性・dir属性などの属性と一緒に使用する場合に便利な要素です。 これらの属性と組み合わせることで、&lt;span&gt;～&lt;span&gt;で囲まれた範囲に スタイルシートやスクリプトを適用したり、その範囲の言語や表記方向を指定することができます。
+					</p>
+					<p>
+						lang属性は、言語を指定する際に使用します。 例えば、日本語の本文中に部分的に英語が混じる場合などに、読み上げブラウザなどへの影響を考慮して言語を指定します。 lang属性の値は、日本語ならja、英語ならenとなります。
+					</p>
+					<p>
+						dir属性は、テキストの表記方向を指定する際に指定します。 dir属性の値は、表記方向が左から右ならltr（left-to-right）、右から左ならrtl（right-to-left）となります。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						span要素は、HTML4.01からHTML5へのバージョンアップで大きな変更はありません。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;p&gt;
+						絵の具の
+						&lt;span style=&quot;background-color: #0099FF&quot;&gt;青色&lt;/span&gt;と
+						&lt;span style=&quot;background-color: #FFFF00&quot;&gt;黄色&lt;/span&gt;を混ぜると
+						&lt;span style=&quot;background-color: #33CC33&quot;&gt;緑色&lt;/span&gt;になります。
+						&lt;/p&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

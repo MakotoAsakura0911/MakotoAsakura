@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>ul</h1>
+				<div id="box">
+					<p>
+						&lt;ul&gt;タグはunordered listの略で、順序のないリストを表示する際に使用します。 リスト項目は、&lt;li&gt;タグで指定します。
+					</p>
+					<p>
+						&lt;ul&gt;タグで作成されるのは順序のないリストなので、リスト項目の順序を変えても文書の意味は変わりません。 順序のあるリストを作成する際には&lt;ol&gt;タグを使用してください。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						HTML4.01では、ul要素にはtype属性が用意されており、リストの先頭記号（リストマーカー）の種類として、 黒丸（disc）・白丸（circle）・黒い四角（square） を指定することができました。
+					</p>
+					<p>
+						HTML5では、ul要素のtype属性は廃止されています。 リストマーカーのスタイルを指定する際には、 CSSのlist-style-typeプロパティを使用してください。 例えば、黒い四角（square）なら以下のように記述します。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;p&gt;私は今までに以下の街に住んだことがあります。&lt;/p&gt;
+						&lt;ul&gt;
+						&lt;li&gt;札幌&lt;/li&gt;
+						&lt;li&gt;東京&lt;/li&gt;
+						&lt;li&gt;大阪&lt;/li&gt;
+						&lt;li&gt;博多&lt;/li&gt;
+						&lt;/ul&gt;
+
+						&lt;p&gt;私は今までに以下の順で引っ越しをしました。&lt;/p&gt;
+						&lt;ol&gt;
+						&lt;li&gt;大阪&lt;/li&gt;
+						&lt;li&gt;札幌&lt;/li&gt;
+						&lt;li&gt;東京&lt;/li&gt;
+						&lt;li&gt;博多&lt;/li&gt;
+						&lt;/ol&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

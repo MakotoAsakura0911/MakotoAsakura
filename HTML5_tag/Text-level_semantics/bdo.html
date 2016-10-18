@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>bdo</h1>
+				<div id="box">
+					<p>
+						&lt;bdo&gt;タグは、文字表記の方向を指定する際に使用します。 アラビア語やヘブライ語のように右から左に記述する言語を表記する際などに使用します。
+					</p>
+					<p>
+						文字表記の方向は、dir属性で指定します。 dir属性の値は、表記方向が左から右ならltr（left-to-right）、右から左ならrtl（right-to-left）となります。
+					</p>
+					<p>
+						&lt;bdo&gt;をスタイリング目的で使用するのは誤りです。そのような目的にはCSSを使用してください。 CSSでは、 &lt;p style=&quot;direction: rtl; unicode-bidi: bidi-override;&quot;&gt;～&lt;/p&gt; などと記述します。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						bdo要素は、HTML4.01からHTML5へのバージョンアップで大きな変更はありません。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;p&gt;
+						&lt;bdo dir=&quot;rtl&quot;&gt;いづれの御時にか、女御、更衣あまたさぶらひたまひけるなかに&hellip;&lt;/bdo&gt;
+						&lt;/p&gt;
+						&lt;p&gt;
+						&lt;bdo dir=&quot;ltr&quot;&gt;どの帝の御代のことであったか、女御や更衣たちが大勢お仕えなさっていたなかに&hellip;&lt;/bdo&gt;
+						&lt;/p&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>
