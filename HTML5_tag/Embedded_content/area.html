@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>area</h1>
+				<div id="box">
+					<p>
+						&lt;area&gt;タグは、イメージマップのハイパーリンク領域を設定する際に使用します。 &lt;area&gt;は&lt;map&gt;～&lt;/map&gt;の中に配置します。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						area要素は、HTML5ではnohref属性が廃止されています。 一方で、新しくhreflang属性・media属性・rel属性・type属性が追加されています。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;img src=&quot;images/area.gif&quot; usemap=&quot;#sample&quot; alt=&quot;サンプル&quot; width=&quot;384&quot; height=&quot;128&quot;&gt;
+						&lt;map name=&quot;sample&quot;&gt;
+						&lt;area href=&quot;aaa.htm&quot; shape=&quot;rect&quot; alt=&quot;四角形&quot; coords=&quot;15,19,126,104&quot;&gt;
+						&lt;area href=&quot;bbb.htm&quot; shape=&quot;circle&quot; alt=&quot;円形&quot; coords=&quot;197,69,54&quot;&gt;
+						&lt;area href=&quot;ccc.htm&quot; shape=&quot;poly&quot; alt=&quot;多角形&quot; coords=&quot;306,12,261,109,378,92&quot;&gt;
+						&lt;/map&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

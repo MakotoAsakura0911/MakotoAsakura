@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>object</h1>
+				<div id="box">
+					<p>
+						&lt;object&gt;タグは、文書に外部リソースを埋め込む際に使用します。 &lt;embed&gt;がプラグインを必要とするデータを埋め込むのに対して、 &lt;object&gt;には外部リソース全般を指定することができます。
+					</p>
+					<p>
+						&lt;object&gt;タグで指定された外部リソースは、データのタイプにより、 画像、入れ子の閲覧コンテンツ、プラグインで処理されるデータのいずれかとして扱われます。
+					</p>
+					<p>
+						data属性は、文書に埋め込む外部リソースのURLを指定する際に使用します。 また、type属性は外部リソースのタイプを指定する際に使用します。 data属性とtype属性は、最低限どちらか一つを指定する必要があります。
+					</p>
+					<p>
+						また、&lt;object&gt;～&lt;/object&gt;の中には、 &lt;object&gt;タグがサポートされていない環境用の内容を指定することができます。 例えば、&lt;object&gt;～&lt;/object&gt;の中に、 &lt;embed&gt;でも同じ内容を指定しておくと、 動画などが再生される確率が高まるかもしれません。 ちなみに、embed要素は空要素であり、終了タグがありません。 従って、&lt;embed&gt;タグがサポートされていない環境用の内容を指定することはできません。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						HTML5では、 align属性・ archive属性・ border属性・ classid属性・ codebase属性・ codetype属性・ declare属性・ hspace属性・ standby属性・ vspace属性が廃止されています。 一方で、新しくform属性が追加されています。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;p&gt;画像を指定します。&lt;/p&gt;
+						&lt;object data=&quot;images/kaeru.gif&quot; type=&quot;image/gif&quot; width=&quot;100&quot; height=&quot;75&quot;&gt;&lt;/object&gt;
+
+						&lt;p&gt;マウスを乗せると反応するFlashです。&lt;/p&gt;
+						&lt;object data=&quot;images/wave.swf&quot; width=&quot;400&quot; height=&quot;300&quot;&gt;
+						&lt;p&gt;ご覧の環境では、object要素がサポートされていないようです。embed要素で表示します。&lt;/p&gt;
+						&lt;embed src=&quot;images/wave.swf&quot;&gt;
+						&lt;/object&gt;
+
+						&lt;p&gt;PDFファイルを指定します。&lt;/p&gt;
+						&lt;object data=&quot;images/kaeru.pdf&quot; width=&quot;400&quot; height=&quot;300&quot;&gt;
+						&lt;p&gt;ご覧の環境では、object要素がサポートされていないようです。&lt;a href=&quot;images/kaeru.pdf&quot;&gt;PDFファイルをダウンロードしてください&lt;/a&gt;。&lt;/p&gt;
+						&lt;/object&gt;
+
+						&lt;p&gt;外部文書を指定します。&lt;/p&gt;
+						&lt;object data=&quot;sample/kaeru.html&quot;&gt;
+						&lt;p&gt;ご覧の環境では、object要素がサポートされていないようです。&lt;a href=&quot;sample/kaeru.html&quot; target=&quot;_blank&quot;&gt;外部文書を別ウィンドウで開いてください&lt;/a&gt;。&lt;/p&gt;
+						&lt;/object&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

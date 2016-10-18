@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>canvas</h1>
+				<div id="box">
+					<p>
+						&lt;canvas&gt;タグは、図形を描く際に使用します。今までウェブページ上で図形を描くには、PNG・JPEG・GIFなどの画像に置き換えるか、Flashなどのプラグインデータを埋め込むのが一般的でしたが、&lt;canvas&gt;を使用することで、標準のHTMLやJavaScriptだけで、グラフやゲームグラフィックスなどの図形をすばやく表示できるようになります。
+					</p>
+					<p>
+						&amp;lt;canvas&amp;gt;タグは、図形を描く際に使用します。今までウェブページ上で図形を描くには、PNG・JPEG・GIFなどの画像に置き換えるか、Flashなどのプラグインデータを埋め込むのが一般的でしたが、&amp;lt;canvas&amp;gt;を使用することで、標準のHTMLやJavaScriptだけで、グラフやゲームグラフィックスなどの図形をすばやく表示できるようになります。
+					</p>
+					<p>
+						&lt;canvas&gt;～&lt;/canvas&gt;の中には、 &lt;canvas&gt;タグがサポートされていない環境で表示させるメッセージを記述することができます。
+					</p>
+					<p>
+						尚、より適切な要素がある場合には、&lt;canvas&gt;を使うべきではありません。例えば、ページの見出しに&lt;canvas&gt;を使うのは不適切です。見出しを装飾する場合には、&lt;h1&gt;などの適切な要素を使用した上でCSSでスタイリングするべきでしょう。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						canvas要素は、HTML5から新たに追加された要素です。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;!DOCTYPE html&gt;
+						&lt;html&gt;
+						&lt;head&gt;
+						&lt;meta charset=&quot;UTF-8&quot;&gt;
+						&lt;title&gt;canvasで図形を描く&lt;/title&gt;
+
+						&lt;script type=&quot;text/javascript&quot;&gt;
+						&lt;!--
+						function sample() {
+						//描画コンテキストの取得
+						var canvas = document.getElementById(&#039;sample1&#039;);
+						if (canvas.getContext) {
+
+						var context = canvas.getContext(&#039;2d&#039;);
+
+						//左から20上から40の位置に、幅50高さ100の四角形を描く
+						context.fillRect(20,40,50,100);
+
+						//色を指定する
+						context.strokeStyle = &#039;rgb(00,00,255)&#039;; //枠線の色は青
+						context.fillStyle = &#039;rgb(255,00,00)&#039;; //塗りつぶしの色は赤
+
+						//左から200上から80の位置に、幅100高さ50の四角の枠線を描く
+						context.strokeRect(200,80,100,50);
+
+						//左から150上から75の位置に、半径60の半円を反時計回り（左回り）で描く
+						context.arc(150,75,60,Math.PI*1,Math.PI*2,true);
+						context.fill();
+
+						}
+						}
+						//--&gt;
+						&lt;/script&gt;
+
+						&lt;/head&gt;
+						&lt;body onLoad=&quot;sample()&quot;&gt;
+						&lt;h2&gt;canvasで図形を描く&lt;/h2&gt;
+						&lt;canvas id=&quot;sample1&quot; style=&quot;background-color:yellow;&quot;&gt;
+						図形を表示するには、canvasタグをサポートしたブラウザが必要です。
+						&lt;/canvas&gt;
+						&lt;/body&gt;
+						&lt;/html&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

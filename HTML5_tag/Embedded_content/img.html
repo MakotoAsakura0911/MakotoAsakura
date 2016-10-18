@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>img</h1>
+				<div id="box">
+					<p>
+						&lt;img&gt;タグは、画像を表示する際に使用します。 必須属性のsrc属性で画像ファイルのURLを指定します。
+					</p>
+					<p>
+						一般的なブラウザで表示できる画像フォーマットとしては、PNG・GIF・JPEGがよく利用されています。 他にも、ウェブ用のベクター画像フォーマットであるSVGや、単一ページのPDF・アニメPNG・アニメGIFなどをsrc属性の値として指定できます。
+					</p>
+					<p>
+						alt属性には、画像が利用できない環境向けのテキストを指定します。 HTML5ではalt属性は必須ではありませんが、指定しておけばアクセシビリティーが高まるでしょう。
+					</p>
+					<p>
+						&lt;img&gt;にtitle属性を指定すると、その値が画像のキャプション情報となります。 また、&lt;legend&gt;を子に持つ&lt;figure&gt;～&lt;/figure&gt;の中に、&lt;img&gt;を子として配置した場合には、 その最初の&lt;legend&gt;～&lt;/legend&gt;の内容が画像のキャプション情報となります。 ここで言うキャプション情報とは、画像のタイトルや説明のための文字情報のことです。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;p&gt;
+						&lt;img src=&quot;../images/kaeru.gif&quot;&gt;&lt;br&gt;
+						&lt;img src=&quot;../images/kaeru.gif&quot; alt=&quot;カエルのイラスト&quot; title=&quot;雨の日のカエル&quot;&gt;
+						&lt;/p&gt;
+						&lt;figure&gt;
+						&lt;legend&gt;雨の日のカエル&lt;/legend&gt;
+						&lt;img src=&quot;../images/kaeru.gif&quot; alt=&quot;カエルのイラスト&quot;&gt;
+						&lt;/figure&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

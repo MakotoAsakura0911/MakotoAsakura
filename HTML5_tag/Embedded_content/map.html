@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>map</h1>
+				<div id="box">
+					<p>
+						&lt;map&gt;タグは、イメージマップを作成する際に使用します。 イメージマップとは、画像や外部リソースの特定領域に、四角形・円形・多角形などの形状でリンクを設定したものです。 一般的には、一枚の画像に複数のリンクを設定する場合などによく利用されています。
+					</p>
+					<p>
+						イメージマップを作成するには、 &lt;map&gt;～&lt;/map&gt;の中に、子要素として&lt;area&gt;を配置します。 &lt;area&gt;のhref属性でリンク先URLを、shape属性でリンク領域の形状を、coords属性でリンク領域の座標を指定します。
+					</p>
+					<p>
+						&lt;map&gt;のname属性は、イメージマップに名前を付けるための必須属性です。 &lt;map&gt;のname属性の値と、&lt;img&gt;や&lt;object&gt;のusemap属性の値を一致させることで、 イメージマップと画像や外部リソースを関連付けます。 &lt;map&gt;のname属性の値には、スペース文字を含めてはいけません。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						HTML5では、map要素にid属性を指定する場合には、 name属性と同じ値を指定しなくてはならないとされています。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;img src=&quot;images/area.gif&quot; usemap=&quot;#sample&quot; alt=&quot;サンプル&quot; width=&quot;384&quot; height=&quot;128&quot;&gt;
+						&lt;map name=&quot;sample&quot;&gt;
+						&lt;area href=&quot;aaa.htm&quot; shape=&quot;rect&quot; alt=&quot;四角形&quot; coords=&quot;15,19,126,104&quot;&gt;
+						&lt;area href=&quot;bbb.htm&quot; shape=&quot;circle&quot; alt=&quot;円形&quot; coords=&quot;197,69,54&quot;&gt;
+						&lt;area href=&quot;ccc.htm&quot; shape=&quot;poly&quot; alt=&quot;多角形&quot; coords=&quot;306,12,261,109,378,92&quot;&gt;
+						&lt;/map&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>
