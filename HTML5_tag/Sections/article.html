@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript">
+		SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf';
+		SyntaxHighlighter.all();
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>article</h1>
+				<div id="box">
+					<p>&ltarticle&gtタグは、内容が単体で完結するセクションであることを示す際に使用します。例えば、フォーラムでの投稿、雑誌や新聞の記事、ブログのエントリ、コメントなどです。<br />
+						&ltarticle&gtを入れ子にして使用する場合、内側の&ltarticle&gtの内容は、原則として外側の&ltarticle&gtの内容に関連していることになります。例えば、&ltarticle&gtタグでくくられたブログのエントリの内側に、さらに&ltarticle&gtタグでくくられたユーザーコメントを入れ子に配置することで、そのコメントがそのブログエントリに対して投稿されたものであることを示すことができる。
+					</p>
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>article要素は、HTML5から新たに追加された要素です。</p>
+
+					<pre class="brush: html;">
+						&lt;h1&gt;太郎のブログ&lt;/h1&gt;
+
+						&lt;article&gt;
+						&lt;h2&gt;&lt;a href= &quot;entry99.html&quot;&gt;海釣り&lt;/a&gt;&lt;/h2&gt;
+						&lt;p&gt;今日は海釣りに出掛けた&hellip;&lt;/p&gt;
+						&lt;article&gt;
+						&lt;h2&gt;コメント&lt;/h2&gt;
+						&lt;p&gt;いいですね&hellip;&lt;/p&gt;
+						&lt;/article&gt;
+						&lt;/article&gt;
+
+						&lt;article&gt;
+						&lt;h2&gt;&lt;a href= &quot;entry98.html&quot;&gt;ドライブ&lt;/a&gt;&lt;/h2&gt;
+						&lt;p&gt;今日はドライブに行った&hellip;&lt;/p&gt;
+						&lt;article&gt;
+						&lt;h2&gt;コメント&lt;/h2&gt;
+						&lt;p&gt;はじめまして太郎さん&hellip;&lt;/p&gt;
+						&lt;/article&gt;
+						&lt;/article&gt;
+
+						&lt;address&gt;Posted by 太郎&lt;/address&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+				
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

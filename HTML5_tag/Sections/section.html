@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript">
+		SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf';
+		SyntaxHighlighter.all();
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>section</h1>
+				<div id="box">
+					<p>&ltsection&gtタグは、ウェブページ内のその部分が、一つのセクションであることを示す際に使用します。</p>
+					<p>セクションとは、文書やアプリケーションの一部分となる、意味や機能のひとまとまりのことです。 ウェブページ内のセクションとしては、例えば、導入部分、新着情報、連絡先などが考えられます。</p>
+					<p>&ltsection&gtは一般的なセクションを定義するタグであるため、 要素内容を記事として配信する意味合いが強い場合には、&ltarticle&gtを使用することが推奨されています。 また、 補足情報の場合には&ltaside&gt、 ナビゲーションの場合には&ltnav&gtを使用します。 他にも、 ヘッダに該当する場合には&ltheader&gt、 フッタの場合には&ltfooter&gt、 などのタグを使用するほうが、ウェブページの文書構造がより明確になるでしょう。</p>
+					<p>
+						セクションは意味的なひとまとまりなので、その部分の意味を表す見出しを付けることができるはずです。 見出しを付けることができない場合には、その部分を&ltsection&gt～&lt/section&gtで囲むのは適切ではないかもしれません。 もし、&ltsection&gtタグを使用するべきかどうか迷った際には、その部分に見出しを付けることができるかを考えてみると、 セクションとしてふさわしいかどうか判断しやすくなるでしょう。
+					</p>
+					<p>
+						セクションの見出しは必須ではありませんが、付けるとすれば&ltsection&gt～&lt/section&gtの外ではなく中に入れます。 また、サンプルでは見出しに&lth1&gtタグを使用していますが、 見出しレベルに応じて&lth1&gtから&lth6&gtタグのいずれかを使用することができます。
+					</p>
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>section要素は、HTML5から新たに追加された要素です。</p>
+
+					<pre class="brush: html;">
+						&lt;article&gt;
+						&lt;hgroup&gt;
+						&lt;h1&gt;インターネットの未来&lt;/h1&gt;
+						&lt;h2&gt;概観&lt;/h2&gt;
+						&lt;/hgroup&gt;
+						&lt;p&gt;これからのインターネットについて考察します。&lt;/p&gt;
+						&lt;section&gt;
+						&lt;h1&gt;モバイルインターネット&lt;/h1&gt;
+						&lt;p&gt;スマートフォン・スマートパッドの普及により、モバイルによる利用が増加しそうです。&lt;/p&gt;
+						&lt;/section&gt;
+						&lt;section&gt;
+						&lt;h1&gt;アジアの拡大&lt;/h1&gt;
+						&lt;p&gt;アジアからのインターネット利用者が約５０％になると予想されています。&lt;/p&gt;
+						&lt;/section&gt;
+						&lt;/article&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

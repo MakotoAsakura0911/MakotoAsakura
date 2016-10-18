@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="robots" content="nofollow">
+		<title></title>
+
+		<link rel="stylesheet" href="../css/common.css" type="text/css" />
+		<link rel="stylesheet" href="../css/style.css">
+		<link type="text/css" rel="stylesheet" href="syntax/styles/shCore.css" />
+		<link rel="stylesheet" href="syntax/styles/shCoreEclipse.css">
+		<link rel="stylesheet" href="syntax/styles/shThemeRDark.css" type="text/css" />
+
+		<script src="js/jquery-1.11.3.min.js" /></script>
+		<script type="text/javascript" src="syntax/scripts/shCore.js"></script>
+		<script type="text/javascript" src="syntax/scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="syntax/scripts/shBrushCss.js"></script>
+		<script type="text/javascript" src="syntax/scripts/shBrushXml.js"></script>
+		<script type="text/javascript">
+			SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf';
+			SyntaxHighlighter.all();
+		</script>
+
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>address</h1>
+				<div id="box">
+					<p>
+						&lt;address&gt;タグは、連絡先・問合せ先を表す際に使用します。 address要素は、通常はその文書の作者への連絡先情報を表しますが、 article要素の中に配置されている場合には、直近の祖先となるarticle要素の内容の作者への連絡先情報を表します。
+					</p>
+					<p>
+						address要素は、あくまでも内容に関する連絡先・問合せ先を表す要素です。 &ldquo;address&rdquo;という単語は日本語では&ldquo;住所&rdquo;という意味になりますが、 文章中に住所が出てきたらからといって&lt;address&gt;～&lt;/address&gt;でくくるのは誤りです。 このような場合には&lt;p&gt;タグなどを使用するほうがふさわしいでしょう。 また、address要素の中には、連絡先情報以外の情報を含めてはいけません。 例えば、最終更新日時などの情報を含めるのは誤りです。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						address要素は、HTML4.01では文書の制作者への連絡先情報を表す要素でした。 HTML5へのバージョンアップによる大きな変更はありませんが、 article要素の中に配置された場合には、直近の祖先となるarticle要素の内容の作者への連絡先情報を表すことになっています。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;footer&gt;
+						&lt;address&gt;
+						このウェブページの作者に連絡を取りたい方は、&lt;a href=&quot;mailto:info@htmq.com&quot;&gt;info@htmq.com&lt;/a&gt;までメールをお送りいただくか、&lt;a href=&quot;../contact/&quot;&gt;お問合わせフォーム&lt;/a&gt;からメッセージをお送りください。
+						&lt;/address&gt;
+						&lt;p&gt;Last Modified: 2010/12/24 23:37:50&lt;/p&gt;
+						&lt;/footer&gt;
+					</pre>
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>
