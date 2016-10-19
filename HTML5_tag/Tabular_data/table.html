@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>table</h1>
+				<div id="box">
+					<p>
+						&lt;table&gt;タグは、テーブル（表）を作成する際に使用します。
+					</p>
+					<p>
+						テーブルの基本的な構造は、&lt;table&gt;～&lt;/table&gt;の中に &lt;tr&gt;～&lt;/tr&gt;で表の横一行を定義して、 さらにその中に&lt;th&gt;～&lt;/th&gt;や&lt;td&gt;～&lt;/td&gt;でセルを定義します。 テーブルは行（横行）とカラム（縦列）を持ちますが、空の行やカラムを持つことはできません。
+					</p>
+					<p>
+						テーブルの各セルには見出しを定義するヘッダセル（&lt;th&gt;～&lt;/th&gt;）と、 データを定義するデータセル（&lt;td&gt;～&lt;/td&gt;）があります。 ヘッダセル内のテキストは、一般的なブラウザでは太字でセンタリングされて表示されます。
+					</p>
+					<p>
+						テーブルのキャプションは&lt;caption&gt;で指定します。 また、テーブルのヘッダ・フッタ・本体は、 &lt;thead&gt;・&lt;tfoot&gt;・&lt;tbody&gt;で定義します。 これらの要素は省略することもできますが、指定しておけばテーブル構造がより明確になるでしょう。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						&lt;table&gt;のsummary属性は、表の目的や構造を分かりやすくするための説明・要約を指定する場合に使用します。 表の説明・要約を指定する際には、特に目の不自由な人にとってこれらのテキストが役立つかどうかを考慮する必要があります。 もし、役立たないのであれば、むしろsummary属性は入れないほうが良いでしょう。
+					</p>
+					<p>
+						また、表の説明・要約をする場合には、必ず&lt;table&gt;のsummary属性を使用しなければならないということはありません。 summary属性の代わりに、テーブルの前や後に&lt;p&gt;タグで説明文の段落を添えても良いでしょうし、 &lt;caption&gt;～&lt;/caption&gt;の中にテーブルの内容が伝わるようなキャプション内容を指定しても良いでしょう。 大切なことは、構造が複雑になりがちなテーブルの内容を、様々な環境のユーザーが理解しやすいように配慮することです。 最善の方法は、テーブル構造についての説明を記述するのではなく、説明が不要な分かりやすい構造のテーブルを作成することです。
+					</p>
+					<p>
+						テーブルをレイアウト目的で使用してはいけません。 テーブルでレイアウトを制御すると、 ユーザー環境によっては情報の出力のされ方がでたらめになってしまう場合があるからです。 例えば、一般的なブラウザでは見栄え良くまとまっていても、 読み上げソフトで再生すると、読み上げ順がバラバラになってしまうかもしれません。 レイアウトが目的の場合にはCSSを使用してください。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						table要素には、HTML4.01ではborder属性・cellpadding属性・cellspacing属性・frame属性・rules属性・width属性が用意されていました。 HTML5ではこれらの属性は廃止され、summary属性のみが残されています。
+					</p>
+
+					<h3>●使用例１</h3>
+					<pre class="brush: html;">
+						&lt;table&gt;
+						&lt;caption&gt;
+						&lt;strong&gt;お寿司をどこで食べるか？その長所と短所&lt;/strong&gt;
+						&lt;details&gt;
+						&lt;summary&gt;このテーブルの説明&lt;/summary&gt;
+						&lt;p&gt;以下のテーブルでは、２番目のカラムに寿司店のタイプが入れられています。その左側にそのようなタイプのお店でお寿司を食べる場合の長所が、右側に短所が入れられています。&lt;/p&gt;
+						&lt;/details&gt;
+						&lt;/caption&gt;
+						&lt;thead&gt;
+						&lt;tr&gt;&lt;th&gt;長所&lt;/th&gt;&lt;th&gt;どこで食べるか&lt;/th&gt;&lt;th&gt;短所&lt;/th&gt;&lt;/tr&gt;
+						&lt;/thead&gt;
+						&lt;tbody&gt;
+						&lt;tr&gt;&lt;td&gt;ネタにこだわり、技術が素晴らしい&lt;/td&gt;&lt;th&gt;銀座の高級店&lt;/th&gt;&lt;td&gt;値段が時価で不安、予約が必要&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;td&gt;値段が良心的、気軽に手に取れる&lt;/td&gt;&lt;th&gt;回転寿司&lt;/th&gt;&lt;td&gt;ネタが解凍もの、休みの日は混む&lt;/td&gt;&lt;/tr&gt;
+						&lt;/tbody&gt;
+						&lt;/table&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<table>
+							<caption>
+							<strong>お寿司をどこで食べるか？その長所と短所</strong>
+							<details>
+							<summary>このテーブルの説明</summary>
+							<p>以下のテーブルでは、２番目のカラムに寿司店のタイプが入れられています。その左側にそのようなタイプのお店でお寿司を食べる場合の長所が、右側に短所が入れられています。</p>
+							</details>
+							</caption>
+							<thead>
+							<tr><th>長所</th><th>どこで食べるか</th><th>短所</th></tr>
+							</thead>
+							<tbody>
+							<tr><td>ネタにこだわり、技術が素晴らしい</td><th>銀座の高級店</th><td>値段が時価で不安、予約が必要</td></tr>
+							<tr><td>値段が良心的、気軽に手に取れる</td><th>回転寿司</th><td>ネタが解凍もの、休みの日は混む</td></tr>
+							</tbody>
+							</table>
+						</div>
+					</div>
+
+					<p>
+						上記のテーブルは、読み上げソフトなどではやや理解しにくい構造となっているため、 &lt;details&gt;～&lt;/details&gt;でテーブルの説明を添えてみました。 上記のテーブルを、説明が無くても分かりやすくなるように構造を変更したものが、以下の使用例です。
+					</p>
+
+					<h3>●使用例２</h3>
+					<pre class="brush: html;">
+						&lt;table&gt;
+						&lt;caption&gt;
+						&lt;strong&gt;お寿司をどこで食べるか？その長所と短所&lt;/strong&gt;
+						&lt;/caption&gt;
+						&lt;thead&gt;
+						&lt;tr&gt;&lt;th&gt;どこで食べるか&lt;/th&gt;&lt;th&gt;長所&lt;/th&gt;&lt;th&gt;短所&lt;/th&gt;&lt;/tr&gt;
+						&lt;/thead&gt;
+						&lt;tbody&gt;
+						&lt;tr&gt;&lt;th&gt;銀座の高級店&lt;/th&gt;&lt;td&gt;ネタにこだわり、技術が素晴らしい&lt;/td&gt;&lt;td&gt;値段が時価で不安、予約が必要&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th&gt;回転寿司&lt;/th&gt;&lt;td&gt;値段が良心的、気軽に手に取れる&lt;/td&gt;&lt;td&gt;ネタが解凍もの、休みの日は混む&lt;/td&gt;&lt;/tr&gt;
+						&lt;/tbody&gt;
+						&lt;/table&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<table>
+							<caption>
+							<strong>お寿司をどこで食べるか？その長所と短所</strong>
+							</caption>
+							<thead>
+							<tr><th>どこで食べるか</th><th>長所</th><th>短所</th></tr>
+							</thead>
+							<tbody>
+							<tr><th>銀座の高級店</th><td>ネタにこだわり、技術が素晴らしい</td><td>値段が時価で不安、予約が必要</td></tr>
+							<tr><th>回転寿司</th><td>値段が良心的、気軽に手に取れる</td><td>ネタが解凍もの、休みの日は混む</td></tr>
+							</tbody>
+							</table>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

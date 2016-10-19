@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>col</h1>
+				<div id="box">
+					<p>
+						&lt;col&gt;タグは、表の縦列に属性やスタイルを指定する際に使用します。 &lt;col&gt;は表の縦列をグループ化しませんが、複数の縦列に対して同じ属性やスタイルをまとめて指定することができます。
+					</p>
+
+					<h3>&lt;colgroup&gt;と&lt;col&gt;の違い</h3>
+					<p>
+						&lt;colgroup&gt;と&lt;col&gt;は混同しがちですが、以下の点を意識すると理解しやすいでしょう。
+					</p>
+					<p>
+						&lt;colgroup&gt;は、表の縦列グループを表す要素です。<br />
+						&lt;col&gt;は、&lt;colgroup&gt;によってグループ化された縦列グループ内の１つ以上の縦列を表す要素です。<br />
+						&lt;colgroup&gt;は、表の縦列をグループ化しますが、グループ化した縦列にまとめて属性やスタイルを適用することができます。<br />
+						&lt;col&gt;は、表の縦列をグループ化しませんが、複数の縦列にまとめて属性やスタイルを適用することができます。<br />
+						&lt;colgroup&gt;は必ず&lt;table&gt;～&lt;/table&gt;の中に配置します。<br />
+						&lt;col&gt;は必ず&lt;colgroup&gt;～&lt;/colgroup&gt;の中に配置します。ただし、&lt;colgroup&gt;がspan属性を持っている場合には、&lt;col&gt;を配置することはできません。<br />
+						&lt;colgroup&gt;がspan属性を持っている場合には、空要素となります。<br />
+						まとめると、表の縦列をグループ化する場合、および、表の縦列をグループ化した上で属性やスタイルを指定する場合には&lt;colgroup&gt;を使用します。 一方、表の縦列をグループ化することなく属性やスタイルを指定する場合には&lt;col&gt;を使用します。
+					</p>
+
+
+					<h3>属性</h3>
+					<p>
+						span属性には、属性やスタイルを適用する縦列の数を指定します。 span属性の値に指定できるのは0より大きい正の整数で、負の数値を指定することはできません。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						col要素は、HTML5ではalign属性・char属性・charoff属性・valign属性・width属性が廃止され、 span属性だけが残されています。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;table&gt;
+						&lt;caption&gt;寿司ネタ人気ランキング&lt;/caption&gt;
+						&lt;colgroup span=&quot;1&quot; style=&quot;width:30px; background-color:#FF9900;&quot;&gt;
+						&lt;colgroup&gt;
+						&lt;col span=&quot;2&quot; style=&quot;width:100px; background-color:#FF3300;&quot;&gt;
+						&lt;col span=&quot;1&quot; style=&quot;width:250px; background-color:#FFCC00;&quot;&gt;
+						&lt;/colgroup&gt;
+						&lt;thead&gt;
+						&lt;tr&gt;&lt;th&gt;順位&lt;/th&gt;&lt;th&gt;名前&lt;/th&gt;&lt;th&gt;人気度&lt;/th&gt;&lt;th&gt;備考&lt;/th&gt;&lt;/tr&gt;
+						&lt;/thead&gt;
+						&lt;tbody&gt;
+						&lt;tr&gt;&lt;th&gt;１位&lt;/th&gt;&lt;td&gt;トロ&lt;/td&gt;&lt;td&gt;☆☆☆☆☆&lt;/td&gt;&lt;td&gt;やはり何といってもトロ！&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th&gt;２位&lt;/th&gt;&lt;td&gt;サーモン&lt;/td&gt;&lt;td&gt;☆☆☆☆&lt;/td&gt;&lt;td&gt;ほど良い脂の乗りで女性に人気。&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th&gt;３位&lt;/th&gt;&lt;td&gt;うに&lt;/td&gt;&lt;td&gt;☆☆☆&lt;/td&gt;&lt;td&gt;軍艦もので唯一ランクイン。&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th&gt;４位&lt;/th&gt;&lt;td&gt;えび&lt;/td&gt;&lt;td&gt;☆☆☆&lt;/td&gt;&lt;td&gt;プリプリした歯ごたえが魅力。&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th&gt;５位&lt;/th&gt;&lt;td&gt;イカ&lt;/td&gt;&lt;td&gt;☆☆&lt;/td&gt;&lt;td&gt;やはり外せない甘みのあるイカ。&lt;/td&gt;&lt;/tr&gt;
+						&lt;/tbody&gt;
+						&lt;/table&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<table>
+							<caption>寿司ネタ人気ランキング</caption>
+							<colgroup span="1" style="width:30px; background-color:#FF9900;">
+							<colgroup>
+							<col span="2" style="width:100px; background-color:#FF3300;">
+							<col span="1" style="width:250px; background-color:#FFCC00;">
+							</colgroup>
+							<thead>
+							<tr><th>順位</th><th>名前</th><th>人気度</th><th>備考</th></tr>
+							</thead>
+							<tbody>
+							<tr><th>１位</th><td>トロ</td><td>☆☆☆☆☆</td><td>やはり何といってもトロ！</td></tr>
+							<tr><th>２位</th><td>サーモン</td><td>☆☆☆☆</td><td>ほど良い脂の乗りで女性に人気。</td></tr>
+							<tr><th>３位</th><td>うに</td><td>☆☆☆</td><td>軍艦もので唯一ランクイン。</td></tr>
+							<tr><th>４位</th><td>えび</td><td>☆☆☆</td><td>プリプリした歯ごたえが魅力。</td></tr>
+							<tr><th>５位</th><td>イカ</td><td>☆☆</td><td>やはり外せない甘みのあるイカ。</td></tr>
+							</tbody>
+							</table>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>th</h1>
+				<div id="box">
+					<p>
+						&lt;th&gt;タグは、テーブル（表）の見出しセル（table header cell）を作成する際に使用します。
+					</p>
+					<p>
+						テーブル（表）の基本的な構造は、&lt;table&gt;～&lt;/table&gt;の中に &lt;tr&gt;～&lt;/tr&gt;で表の横一行を定義して、 さらにその中に&lt;th&gt;～&lt;/th&gt;や&lt;td&gt;～&lt;/td&gt;でセルを定義します。
+					</p>
+					<p>
+						データセル（table data cell）を作成する場合には、&lt;td&gt;～&lt;/td&gt;を使用します。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						colspan属性：セルが横方向にまたがる縦列の数を指定
+					</p>
+					<p>
+						rowspan属性：セルが縦方向にまたがる横行の数を指定
+					</p>
+					<p>
+						headers属性：セルがどの見出しセルと対応しているかをth要素のid属性の値で指定
+					</p>
+					<p>
+						scope属性：見出しセルが行・列のどの範囲に対応しているかをキーワード（row・col・rowgroup・colgroup）で指定。 scope="row"を指定すると、その見出しセルは同じ横行の後続のいくつかのセルに適用されることを表します。 scope="col"を指定すると、その見出しセルは同じ縦列の後続のいくつかのセルに適用されることを表します。 scope="rowgroup"を指定すると、その見出しセルは同じ横行の後続のすべてのセルに適用されることを表します。 scope="colgroup"を指定すると、その見出しセルは同じ縦行の後続のすべてのセルに適用されることを表します。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						th要素は、HTML5ではabbr属性・align属性・axis属性・char属性・charoff属性・height属性・nowrap属性・valign属性・width属性 が廃止されています。
+					</p>
+					<p>
+						セルの幅・高さを指定するにはCSSのwidthプロパティやheightプロパティを、 セル内の揃え位置を指定するにはCSSのtext-alignプロパティやvertical-alignプロパティを、 セル内での改行を禁止するにはCSSのwhite-spaceプロパティを、それぞれ使用してください。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;table&gt;
+						&lt;tr&gt;&lt;th&gt;順位&lt;/th&gt;&lt;th&gt;名前&lt;/th&gt;&lt;th&gt;人気度&lt;/th&gt;&lt;th&gt;備考&lt;/th&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th&gt;１位&lt;/th&gt;&lt;td&gt;トロ&lt;/td&gt;&lt;td&gt;☆☆☆☆☆&lt;/td&gt;&lt;td&gt;やはり何といってもトロ！&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th&gt;２位&lt;/th&gt;&lt;td&gt;サーモン&lt;/td&gt;&lt;td&gt;☆☆☆☆&lt;/td&gt;&lt;td&gt;ほど良い脂の乗りで女性に人気。&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th&gt;３位&lt;/th&gt;&lt;td&gt;うに&lt;/td&gt;&lt;td&gt;☆☆☆&lt;/td&gt;&lt;td&gt;軍艦もので唯一ランクイン。&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th&gt;４位&lt;/th&gt;&lt;td&gt;えび&lt;/td&gt;&lt;td&gt;☆☆☆&lt;/td&gt;&lt;td&gt;プリプリした歯ごたえが魅力。&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th&gt;５位&lt;/th&gt;&lt;td&gt;イカ&lt;/td&gt;&lt;td&gt;☆☆&lt;/td&gt;&lt;td&gt;やはり外せない甘みのあるイカ。&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;おすし情報局&lt;/td&gt;&lt;/tr&gt;
+						&lt;/table&gt;
+
+						&lt;table&gt;
+						&lt;tr&gt;&lt;th id=&quot;t1&quot;&gt;順位&lt;/th&gt;&lt;th id=&quot;t2&quot;&gt;名前&lt;/th&gt;&lt;th id=&quot;t3&quot;&gt;人気度&lt;/th&gt;&lt;th id=&quot;t4&quot;&gt;備考&lt;/th&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th headers=&quot;t1&quot;&gt;１位&lt;/th&gt;&lt;td headers=&quot;t2&quot;&gt;トロ&lt;/td&gt;&lt;td headers=&quot;t3&quot;&gt;☆☆☆☆☆&lt;/td&gt;&lt;td headers=&quot;t4&quot;&gt;やはり何といってもトロ！&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th headers=&quot;t1&quot;&gt;２位&lt;/th&gt;&lt;td headers=&quot;t2&quot;&gt;サーモン&lt;/td&gt;&lt;td headers=&quot;t3&quot;&gt;☆☆☆☆&lt;/td&gt;&lt;td headers=&quot;t4&quot;&gt;ほど良い脂の乗りで女性に人気。&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th headers=&quot;t1&quot;&gt;３位&lt;/th&gt;&lt;td headers=&quot;t2&quot;&gt;うに&lt;/td&gt;&lt;td headers=&quot;t3&quot;&gt;☆☆☆&lt;/td&gt;&lt;td headers=&quot;t4&quot;&gt;軍艦もので唯一ランクイン。&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th headers=&quot;t1&quot;&gt;４位&lt;/th&gt;&lt;td headers=&quot;t2&quot;&gt;えび&lt;/td&gt;&lt;td headers=&quot;t3&quot;&gt;☆☆☆&lt;/td&gt;&lt;td headers=&quot;t4&quot;&gt;プリプリした歯ごたえが魅力。&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th headers=&quot;t1&quot;&gt;５位&lt;/th&gt;&lt;td headers=&quot;t2&quot;&gt;イカ&lt;/td&gt;&lt;td headers=&quot;t3&quot;&gt;☆☆&lt;/td&gt;&lt;td headers=&quot;t4&quot;&gt;やはり外せない甘みのあるイカ。&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;おすし情報局&lt;/td&gt;&lt;/tr&gt;
+						&lt;/table&gt;
+
+						&lt;table&gt;
+						&lt;tr&gt;&lt;th scope=&quot;col&quot;&gt;順位&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;名前&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;人気度&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;備考&lt;/th&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;１位&lt;/th&gt;&lt;td&gt;トロ&lt;/td&gt;&lt;td&gt;☆☆☆☆☆&lt;/td&gt;&lt;td&gt;やはり何といってもトロ！&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;２位&lt;/th&gt;&lt;td&gt;サーモン&lt;/td&gt;&lt;td&gt;☆☆☆☆&lt;/td&gt;&lt;td&gt;ほど良い脂の乗りで女性に人気。&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;３位&lt;/th&gt;&lt;td&gt;うに&lt;/td&gt;&lt;td&gt;☆☆☆&lt;/td&gt;&lt;td&gt;軍艦もので唯一ランクイン。&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;４位&lt;/th&gt;&lt;td&gt;えび&lt;/td&gt;&lt;td&gt;☆☆☆&lt;/td&gt;&lt;td&gt;プリプリした歯ごたえが魅力。&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;５位&lt;/th&gt;&lt;td&gt;イカ&lt;/td&gt;&lt;td&gt;☆☆&lt;/td&gt;&lt;td&gt;やはり外せない甘みのあるイカ。&lt;/td&gt;&lt;/tr&gt;
+						&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;おすし情報局&lt;/td&gt;&lt;/tr&gt;
+						&lt;/table&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<table>
+							<tr><th>順位</th><th>名前</th><th>人気度</th><th>備考</th></tr>
+							<tr><th>１位</th><td>トロ</td><td>☆☆☆☆☆</td><td>やはり何といってもトロ！</td></tr>
+							<tr><th>２位</th><td>サーモン</td><td>☆☆☆☆</td><td>ほど良い脂の乗りで女性に人気。</td></tr>
+							<tr><th>３位</th><td>うに</td><td>☆☆☆</td><td>軍艦もので唯一ランクイン。</td></tr>
+							<tr><th>４位</th><td>えび</td><td>☆☆☆</td><td>プリプリした歯ごたえが魅力。</td></tr>
+							<tr><th>５位</th><td>イカ</td><td>☆☆</td><td>やはり外せない甘みのあるイカ。</td></tr>
+							<tr><td colspan="4">おすし情報局</td></tr>
+							</table>
+
+							<table>
+							<tr><th id="t1">順位</th><th id="t2">名前</th><th id="t3">人気度</th><th id="t4">備考</th></tr>
+							<tr><th headers="t1">１位</th><td headers="t2">トロ</td><td headers="t3">☆☆☆☆☆</td><td headers="t4">やはり何といってもトロ！</td></tr>
+							<tr><th headers="t1">２位</th><td headers="t2">サーモン</td><td headers="t3">☆☆☆☆</td><td headers="t4">ほど良い脂の乗りで女性に人気。</td></tr>
+							<tr><th headers="t1">３位</th><td headers="t2">うに</td><td headers="t3">☆☆☆</td><td headers="t4">軍艦もので唯一ランクイン。</td></tr>
+							<tr><th headers="t1">４位</th><td headers="t2">えび</td><td headers="t3">☆☆☆</td><td headers="t4">プリプリした歯ごたえが魅力。</td></tr>
+							<tr><th headers="t1">５位</th><td headers="t2">イカ</td><td headers="t3">☆☆</td><td headers="t4">やはり外せない甘みのあるイカ。</td></tr>
+							<tr><td colspan="4">おすし情報局</td></tr>
+							</table>
+
+							<table>
+							<tr><th scope="col">順位</th><th scope="col">名前</th><th scope="col">人気度</th><th scope="col">備考</th></tr>
+							<tr><th scope="row">１位</th><td>トロ</td><td>☆☆☆☆☆</td><td>やはり何といってもトロ！</td></tr>
+							<tr><th scope="row">２位</th><td>サーモン</td><td>☆☆☆☆</td><td>ほど良い脂の乗りで女性に人気。</td></tr>
+							<tr><th scope="row">３位</th><td>うに</td><td>☆☆☆</td><td>軍艦もので唯一ランクイン。</td></tr>
+							<tr><th scope="row">４位</th><td>えび</td><td>☆☆☆</td><td>プリプリした歯ごたえが魅力。</td></tr>
+							<tr><th scope="row">５位</th><td>イカ</td><td>☆☆</td><td>やはり外せない甘みのあるイカ。</td></tr>
+							<tr><td colspan="4">おすし情報局</td></tr>
+							</table>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>
