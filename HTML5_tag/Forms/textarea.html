@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>textarea</h1>
+				<div id="box">
+					<p>
+						&lt;textarea&gt;タグは、複数行のテキスト入力欄を作成する際に使用します。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						autofocus属性：自動フォーカスを指定する（autofocus）
+					</p>
+					<p>
+						cols属性（初期値は20）：一行当たりの最大文字数の目安を指定する
+					</p>
+					<p>
+						disabled属性：操作を無効にする（disabled）
+					</p>
+					<p>
+						form属性：どのフォームと関連付けるかを&lt;form&gt;のid名で指定
+					</p>
+					<p>
+						maxlength属性：入力可能な最大文字数を指定
+					</p>
+					<p>
+						name属性：入力フィールドの名前を指定
+					</p>
+					<p>
+						placeholder属性：ユーザー入力に関するヒントを短めのテキストで指定
+					</p>
+					<p>
+						readonly属性：ユーザーによるテキスト編集を不可にして読み取り専用にする（readonly）
+					</p>
+					<p>
+						required属性：入力必須を指定
+					</p>
+					<p>
+						rows属性（初期値は2）：表示行数を指定する
+					</p>
+					<p>
+						wrap属性：入力テキストの改行ルールを指定
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						textarea要素は、HTML5ではautofocus属性・form属性・maxlength属性・placeholder属性・required属性・wrap属性が新たに追加されています。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;p&gt;
+						&lt;label for=&quot;kanso&quot;&gt;ご意見・ご感想：&lt;/label&gt;&lt;br&gt;
+						&lt;textarea id=&quot;kanso&quot; name=&quot;kanso&quot; cols=&quot;40&quot; rows=&quot;4&quot; maxlength=&quot;20&quot; placeholder=&quot;ご意見・ご感想をご記入ください&quot;&gt;&lt;/textarea&gt;
+						&lt;/p&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<p>
+							<label for="kanso">ご意見・ご感想：</label><br>
+							<textarea id="kanso" name="kanso" cols="40" rows="4" maxlength="20" placeholder="ご意見・ご感想をご記入ください"></textarea>
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>option</h1>
+				<div id="box">
+					<p>
+						&lt;option&gt;タグは、&lt;select&gt;タグで作成するセレクトボックスや、 &lt;datalist&gt;タグで作成する入力候補リストの選択肢を指定する際に使用します。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						disabled属性：操作を無効にする（disabled）
+					</p>
+					<p>
+						label属性（必須属性）：選択肢グループにラベル（項目名）を付ける
+					</p>
+					<p>
+						selected属性：選択肢をあらかじめ選択済みにする（selected）
+					</p>
+					<p>
+						value属性：選択肢の値を指定
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						option要素は、HTML5ではselect要素だけではなく、 datalist要素の選択肢としても利用することができるようになっています。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;p&gt;
+						&lt;label for=&quot;language&quot;&gt;言語を選択してください：&lt;/label&gt;
+						&lt;select id=&quot;language&quot; name=&quot;language&quot;&gt;
+						&lt;option value=&quot;en&quot;&gt;英語&lt;/option&gt;
+						&lt;option value=&quot;de&quot; disabled&gt;ドイツ語&lt;/option&gt;
+						&lt;option value=&quot;fr&quot;&gt;フランス語&lt;/option&gt;
+						&lt;option value=&quot;ja&quot; selected&gt;日本語&lt;/option&gt;
+						&lt;option value=&quot;zh&quot;&gt;中国語&lt;/option&gt;
+						&lt;/select&gt;
+						&lt;/p&gt;
+						&lt;p&gt;
+						&lt;label for=&quot;q&quot;&gt;検索ワード：&lt;/label&gt;
+						&lt;input type=&quot;search&quot; id=&quot;q&quot; name=&quot;q&quot; autocomplete=&quot;on&quot; list=&quot;keywords&quot;&gt;
+						&lt;datalist id=&quot;keywords&quot;&gt;
+						&lt;option value=&quot;ウィキペディア&quot;&gt;ウィキペディア&lt;/option&gt;
+						&lt;option value=&quot;ウィルス対策&quot;&gt;
+						&lt;option value=&quot;ウィンドウズ&quot;&gt;
+						&lt;/datalist&gt;
+						&lt;/p&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<p>
+							<label for="language">言語を選択してください：</label>
+							<select id="language" name="language">
+							<option value="en">英語</option>
+							<option value="de" disabled>ドイツ語</option>
+							<option value="fr">フランス語</option>
+							<option value="ja" selected>日本語</option>
+							<option value="zh">中国語</option>
+							</select>
+							</p>
+							<p>
+							<label for="q">検索ワード：</label>
+							<input type="search" id="q" name="q" autocomplete="on" list="keywords">
+							<datalist id="keywords">
+							<option value="ウィキペディア">ウィキペディア</option>
+							<option value="ウィルス対策">
+							<option value="ウィンドウズ">
+							</datalist>
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

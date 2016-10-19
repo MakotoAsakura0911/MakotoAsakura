@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>optgroup</h1>
+				<div id="box">
+					<p>
+						&lt;optgroup&gt;タグは、&lt;option&gt;タグで作成する選択肢をグループ化する際に使用します。 &lt;optgroup&gt;～&lt;/optgroup&gt;の中に&lt;option&gt;を配置することで、 選択肢をグループ化することができます。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						disabled属性：操作を無効にする（disabled）
+					</p>
+					<p>
+						label属性（必須属性）：選択肢グループにラベル（項目名）を付ける
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						optgroup要素は、HTML4.01からHTML5へのバージョンアップで大きな変更はありません。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;form action=&quot;xxxxxx.php&quot; method=&quot;post&quot;&gt;
+						&lt;p&gt;
+						ご希望の旅行コースを選択してください。（※現在、宿泊コースはすべて満室となっています。）
+						&lt;/p&gt;
+						&lt;p&gt;
+						&lt;label&gt;旅行企画名:
+						&lt;select name=&quot;course&quot;&gt;
+						&lt;option selected&gt;▼旅行コースを選択してください&lt;/option&gt;
+						&lt;optgroup label=&quot;ご宿泊&quot; disabled&gt;
+						&lt;option value=&quot;stay01&quot;&gt;【一泊二日】和食・温泉コース&lt;/option&gt;
+						&lt;option value=&quot;stay02&quot;&gt;【一泊二日】洋食・温泉コース&lt;/option&gt;
+						&lt;option value=&quot;stay03&quot;&gt;【一泊二日】食べ放題・温泉コース&lt;/option&gt;
+						&lt;/optgroup&gt;
+						&lt;optgroup label=&quot;お食事とご入浴&quot;&gt;
+						&lt;option value=&quot;lunch01&quot;&gt;【日帰り】和食・温泉コース&lt;/option&gt;
+						&lt;option value=&quot;lunch02&quot;&gt;【日帰り】洋食・温泉コース&lt;/option&gt;
+						&lt;option value=&quot;lunch03&quot;&gt;【日帰り】食べ放題・温泉コース&lt;/option&gt;
+						&lt;/optgroup&gt;
+						&lt;optgroup label=&quot;ご入浴のみ&quot;&gt;
+						&lt;option value=&quot;spa01&quot;&gt;【日帰り】温泉Ａコース&lt;/option&gt;
+						&lt;option value=&quot;spa02&quot;&gt;【日帰り】温泉Ｂコース&lt;/option&gt;
+						&lt;option value=&quot;spa03&quot;&gt;【日帰り】名湯めぐりコース&lt;/option&gt;
+						&lt;/optgroup&gt;
+						&lt;/select&gt;
+						&lt;/label&gt;
+						&lt;/p&gt;
+						&lt;p&gt;
+						&lt;input type=submit value=&quot;確認画面へ進む&quot;&gt;
+						&lt;/p&gt;
+						&lt;/form&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<form action="xxxxxx.php" method="post">
+							<p>
+							ご希望の旅行コースを選択してください。（※現在、宿泊コースはすべて満室となっています。）
+							</p>
+							<p>
+							<label>旅行企画名:
+							<select name="course">
+							<option selected>▼旅行コースを選択してください</option>
+							<optgroup label="ご宿泊" disabled>
+							<option value="stay01">【一泊二日】和食・温泉コース</option>
+							<option value="stay02">【一泊二日】洋食・温泉コース</option>
+							<option value="stay03">【一泊二日】食べ放題・温泉コース</option>
+							</optgroup>
+							<optgroup label="お食事とご入浴">
+							<option value="lunch01">【日帰り】和食・温泉コース</option>
+							<option value="lunch02">【日帰り】洋食・温泉コース</option>
+							<option value="lunch03">【日帰り】食べ放題・温泉コース</option>
+							</optgroup>
+							<optgroup label="ご入浴のみ">
+							<option value="spa01">【日帰り】温泉Ａコース</option>
+							<option value="spa02">【日帰り】温泉Ｂコース</option>
+							<option value="spa03">【日帰り】名湯めぐりコース</option>
+							</optgroup>
+							</select>
+							</label>
+							</p>
+							<p>
+							<input type=submit value="確認画面へ進む">
+							</p>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

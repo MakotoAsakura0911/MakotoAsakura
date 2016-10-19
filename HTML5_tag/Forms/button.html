@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>button</h1>
+				<div id="box">
+					<p>
+						&lt;button&gt;タグは、ボタンを作成する際に使用します。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						autofocus属性：自動フォーカスを指定する（autofocus）
+					</p>
+					<p>
+						disabled属性：操作を無効にする（disabled）
+					</p>
+					<p>
+						form属性：どのフォームと関連付けるかを&lt;form&gt;のid名で指定
+					</p>
+					<p>
+						formaction属性：送信先URLを指定
+					</p>
+					<p>
+						formenctype属性：送信するデータの形式を指定（application/x-www-form-urlencoded・multipart/form-data・text/plain）（初期値はapplication/x-www-form-urlencoded）
+					</p>
+					<p>
+						formmethod属性：送信方法（HTTPメソッド）を指定（get・post）（初期値はget）
+					</p>
+					<p>
+						formnovalidate属性：入力されたデータの妥当性を確認しない（formnovalidate）
+					</p>
+					<p>
+						formtarget属性：フォーム送信するターゲット先を指定（_blank・_self・_parent・_top・任意のターゲット名）
+					</p>
+					<p>
+						name属性：ボタンの名前を指定
+					</p>
+					<p>
+						type属性：ボタンの種類を指定（submit・reset・button）（初期値はsubmit）
+					</p>
+					<p>
+						value属性：値を指定
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						button要素は、HTML5ではHTML4.01には無かった autofocus属性・form属性・formaction属性・formenctype属性・formmethod属性・formnovalidate属性・formtarget属性 が新たに追加されています。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;button type=button onclick=&quot;alert(&#039;button要素は、この使用例のようにスクリプトと組み合わせて利用されることが多いようです。&#039;)&quot;&gt;
+						button要素に関するワンポイントメモを表示
+						&lt;/button&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<button type=button onclick="alert('button要素は、この使用例のようにスクリプトと組み合わせて利用されることが多いようです。')">
+							button要素に関するワンポイントメモを表示
+							</button>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

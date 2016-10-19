@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>label</h1>
+				<div id="box">
+					<p>
+						&lt;label&gt;タグは、フォーム部品と項目名（ラベル）を関連付ける際に使用します。 また、フォーム部品以外にも、ユーザー・インタフェースの項目名（ラベル）を指定する際に使用することもできます。
+					</p>
+					<p>
+						フォーム部品とラベルを関連付けるには、&lt;label&gt;タグのfor属性の値とフォーム部品のid属性の値を一致させるか、 &lt;label&gt;～&lt;/label&gt;の中にフォーム部品を配置するか、のいずれかの方法で指定します。
+					</p>
+					<p>
+						&lt;label&gt;タグを使用してフォーム部品とラベルを関連付けることで、 一般的なブラウザではラベル部分をクリックすると、関連付けられているフォームの入力欄がフォーカスされたり、 ラジオボタンやチェックボックスが選択されるようになります。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						form属性：form要素とラベルを関連付ける
+					</p>
+					<p>
+						for属性：フォーム部品とラベルを関連付ける
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						label要素は、HTML5では新しくform属性が追加されています。
+					</p>
+					<p>
+						&lt;label&gt;のform属性の値と&lt;form&gt;のid属性の値を一致させることで、 離れた場所に配置した別セクションの&lt;form&gt;など、 直接の親要素以外の&lt;form&gt;とラベルを関連付けることができます。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;form action=&quot;mail.php&quot; method=&quot;post&quot;&gt;
+						&lt;p&gt;&lt;label for=&quot;namae&quot;&gt;名前：&lt;/label&gt;&lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;namae&quot; size=&quot;40&quot;&gt;&lt;/p&gt;
+						&lt;fieldset disabled=&quot;disabled&quot;&gt;
+						&lt;legend&gt;性別&lt;/legend&gt;
+						&lt;p&gt;&lt;label for=&quot;dansei&quot;&gt;男性&lt;/label&gt;&lt;input type=&quot;radio&quot; name=&quot;sex&quot; id=&quot;dansei&quot; value=&quot;male&quot;&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;label for=&quot;jyosei&quot;&gt;女性&lt;/label&gt;&lt;input type=&quot;radio&quot; name=&quot;sex&quot; id=&quot;jyosei&quot; value=&quot;female&quot;&gt;&lt;/p&gt;
+						&lt;/fieldset&gt;
+						&lt;fieldset&gt;
+						&lt;legend&gt;趣味&lt;/legend&gt;
+						&lt;p&gt;&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;sports&quot;&gt;スポーツ&lt;/label&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;reading&quot;&gt;読書&lt;/label&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;music&quot;&gt;音楽&lt;/label&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;travel&quot;&gt;旅行&lt;/label&gt;&lt;/p&gt;
+						&lt;/fieldset&gt;
+						&lt;p&gt;&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;&lt;input type=&quot;reset&quot; value=&quot;リセット&quot;&gt;&lt;/p&gt;
+						&lt;/form&gt;
+
+						&lt;p&gt;&lt;label form=&quot;magazine&quot;&gt;よろしければ、メールマガジンにご登録ください。&lt;br&gt;
+						&lt;input type=&quot;text&quot; name=&quot;email&quot; size=&quot;40&quot;&gt;&lt;/label&gt;&lt;/p&gt;
+						&lt;form id=&quot;magazine&quot; action=&quot;magazine.php&quot; method=&quot;post&quot;&gt;
+						&lt;p&gt;&lt;input type=&quot;submit&quot; value=&quot;メルマガ登録！&quot;&gt;&lt;/p&gt;
+						&lt;/form&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<form action="mail.php" method="post">
+							<p><label for="namae">名前：</label><input type="text" name="name" id="namae" size="40"></p>
+							<fieldset disabled="disabled">
+							<legend>性別</legend>
+							<p><label for="dansei">男性</label><input type="radio" name="sex" id="dansei" value="male"></p>
+							<p><label for="jyosei">女性</label><input type="radio" name="sex" id="jyosei" value="female"></p>
+							</fieldset>
+							<fieldset>
+							<legend>趣味</legend>
+							<p><label><input type="checkbox" name="hobby" value="sports">スポーツ</label></p>
+							<p><label><input type="checkbox" name="hobby" value="reading">読書</label></p>
+							<p><label><input type="checkbox" name="hobby" value="music">音楽</label></p>
+							<p><label><input type="checkbox" name="hobby" value="travel">旅行</label></p>
+							</fieldset>
+							<p><input type="submit" value="送信"><input type="reset" value="リセット"></p>
+							</form>
+
+							<p><label form="magazine">よろしければ、メールマガジンにご登録ください。<br>
+							<input type="text" name="email" size="40"></label></p>
+							<form id="magazine" action="magazine.php" method="post">
+							<p><input type="submit" value="メルマガ登録！"></p>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

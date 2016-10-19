@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>legend</h1>
+				<div id="box">
+					<p>
+						&lt;legend&gt;タグは、フォームの入力項目グループにキャプション（タイトルや説明）を付ける際に使用します。
+					</p>
+					<p>
+						&lt;legend&gt;を使用する場合には、&lt;fieldset&gt;～&lt;/fieldset&gt;の中の先頭に配置します。 &lt;legend&gt;を&lt;fieldset&gt;～&lt;/fieldset&gt;の中の先頭に配置すると、 親要素となる&lt;fieldset&gt;で定義されたフォーム部品グループのキャプションを表します。
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						legend要素は、HTML4.01では揃え位置を指定するalign属性が非推奨とされながらも用意されていましたが、HTML5では廃止されています。 揃え位置を指定するにはCSSを使用してください。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;form action=&quot;mail.php&quot; method=&quot;post&quot;&gt;
+						&lt;p&gt;&lt;label&gt;名前：&lt;input type=&quot;text&quot; name=&quot;name&quot; size=&quot;40&quot;&gt;&lt;/label&gt;&lt;/p&gt;
+						&lt;fieldset disabled=&quot;disabled&quot;&gt;
+						&lt;legend&gt;性別&lt;/legend&gt;
+						&lt;p&gt;&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;male&quot;&gt;男&lt;/label&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;female&quot;&gt;女&lt;/label&gt;&lt;/p&gt;
+						&lt;/fieldset&gt;
+						&lt;fieldset&gt;
+						&lt;legend&gt;趣味&lt;/legend&gt;
+						&lt;p&gt;&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;sports&quot;&gt;スポーツ&lt;/label&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;reading&quot;&gt;読書&lt;/label&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;music&quot;&gt;音楽&lt;/label&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;travel&quot;&gt;旅行&lt;/label&gt;&lt;/p&gt;
+						&lt;/fieldset&gt;
+						&lt;p&gt;&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;&lt;input type=&quot;reset&quot; value=&quot;リセット&quot;&gt;&lt;/p&gt;
+						&lt;/form&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<form action="mail.php" method="post">
+							<p><label>名前：<input type="text" name="name" size="40"></label></p>
+							<fieldset disabled="disabled">
+							<legend>性別</legend>
+							<p><label><input type="radio" name="sex" value="male">男</label></p>
+							<p><label><input type="radio" name="sex" value="female">女</label></p>
+							</fieldset>
+							<fieldset>
+							<legend>趣味</legend>
+							<p><label><input type="checkbox" name="hobby" value="sports">スポーツ</label></p>
+							<p><label><input type="checkbox" name="hobby" value="reading">読書</label></p>
+							<p><label><input type="checkbox" name="hobby" value="music">音楽</label></p>
+							<p><label><input type="checkbox" name="hobby" value="travel">旅行</label></p>
+							</fieldset>
+							<p><input type="submit" value="送信"><input type="reset" value="リセット"></p>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>select</h1>
+				<div id="box">
+					<p>
+						&lt;select&gt;タグは、セレクトボックスを作成する際に使用します。 一般的なブラウザでは、ドロップダウン式のセレクトボックスや、スクロール式のセレクトウィンドウとして表示されます。
+					</p>
+					<p>
+						&lt;select&gt;～&lt;/select&gt;でセレクトボックス全体を定義して、 その中に&lt;option&gt;タグを配置して個々の選択肢リストを作成します。 &lt;option&gt;タグで作成した選択肢を&lt;optgroup&gt;～&lt;/optgroup&gt;で囲むと、選択肢をグループ化することができます。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						autofocus属性：自動フォーカスを指定する（autofocus）
+					</p>
+					<p>
+						disabled属性：操作を無効にする（disabled）
+					</p>
+					<p>
+						form属性：どのフォームと関連付けるかを&lt;form&gt;のid名で指定
+					</p>
+					<p>
+						multiple属性：選択肢を複数選択できるようにする（multiple）
+					</p>
+					<p>
+						name属性：セレクトボックスの名前を指定
+					</p>
+					<p>
+						size属性：表示する選択肢の数を指定（1以上の正の整数）
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						select要素は、HTML5ではautofocus属性・form属性が新たに追加されています。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;p&gt;
+						&lt;label for=&quot;language&quot;&gt;言語を選択してください：&lt;/label&gt;
+						&lt;select id=&quot;language&quot; name=&quot;language&quot;&gt;
+						&lt;option value=&quot;en&quot;&gt;英語&lt;/option&gt;
+						&lt;option value=&quot;de&quot;&gt;ドイツ語&lt;/option&gt;
+						&lt;option value=&quot;fr&quot;&gt;フランス語&lt;/option&gt;
+						&lt;option value=&quot;ja&quot; selected&gt;日本語&lt;/option&gt;
+						&lt;option value=&quot;zh&quot;&gt;中国語&lt;/option&gt;
+						&lt;/select&gt;
+						&lt;/p&gt;
+						&lt;p&gt;
+						&lt;label for=&quot;contact&quot;&gt;ご希望の連絡方法（複数選択可）：&lt;/label&gt;
+						&lt;select id=&quot;contact&quot; name=&quot;contact&quot; multiple size=&quot;5&quot;&gt;
+						&lt;option value=&quot;email&quot; selected&gt;電子メール&lt;/option&gt;
+						&lt;option value=&quot;tel&quot; selected&gt;電話&lt;/option&gt;
+						&lt;option value=&quot;fax&quot; selected&gt;ファックス&lt;/option&gt;
+						&lt;option value=&quot;postal&quot; selected&gt;郵便&lt;/option&gt;
+						&lt;option value=&quot;office&quot;&gt;ご来店時に係員より説明&lt;/option&gt;
+						&lt;/select&gt;
+						&lt;/p&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<p>
+							<label for="language">言語を選択してください：</label>
+							<select id="language" name="language">
+							<option value="en">英語</option>
+							<option value="de">ドイツ語</option>
+							<option value="fr">フランス語</option>
+							<option value="ja" selected>日本語</option>
+							<option value="zh">中国語</option>
+							</select>
+							</p>
+							<p>
+							<label for="contact">ご希望の連絡方法（複数選択可）：</label>
+							<select id="contact" name="contact" multiple size="5">
+							<option value="email" selected>電子メール</option>
+							<option value="tel" selected>電話</option>
+							<option value="fax" selected>ファックス</option>
+							<option value="postal" selected>郵便</option>
+							<option value="office">ご来店時に係員より説明</option>
+							</select>
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>
