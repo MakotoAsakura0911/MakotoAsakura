@@ -77,6 +77,31 @@
 						&lt;p&gt;ご覧の環境では、object要素がサポートされていないようです。&lt;a href=&quot;sample/kaeru.html&quot; target=&quot;_blank&quot;&gt;外部文書を別ウィンドウで開いてください&lt;/a&gt;。&lt;/p&gt;
 						&lt;/object&gt;
 					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<p>画像を指定します。</p>
+							<object data="images/kaeru.gif" type="image/gif" width="100" height="75"></object>
+
+							<p>マウスを乗せると反応するFlashです。</p>
+							<object data="images/wave.swf" width="400" height="300">
+							<p>ご覧の環境では、object要素がサポートされていないようです。embed要素で表示します。</p>
+							<embed src="images/wave.swf">
+							</object>
+
+							<p>PDFファイルを指定します。</p>
+							<object data="images/kaeru.pdf" width="400" height="300">
+							<p>ご覧の環境では、object要素がサポートされていないようです。<a href="images/kaeru.pdf">PDFファイルをダウンロードしてください</a>。</p>
+							</object>
+
+							<p>外部文書を指定します。</p>
+							<object data="sample/kaeru.html">
+							<p>ご覧の環境では、object要素がサポートされていないようです。<a href="sample/kaeru.html" target="_blank">外部文書を別ウィンドウで開いてください</a>。</p>
+							</object>
+						</div>
+					</div>
+
 				</div>
 
 				<a href="../index.html">戻る</a>
