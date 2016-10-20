@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>input type="reset"</h1>
+				<div id="box">
+					<p>
+						&lt;input type=&quot;reset&quot; value=&quot;リセット&quot;&gt;を使用するとリセットボタンを作成することができます。
+					</p>
+					<p>
+						リセットボタンは、入力フォームに記入した内容を全て削除し、入力する前の状態に戻す（リセットする）ボタンです。
+					</p>
+					<p>
+						value属性値に記述された文字（上記の例では、「リセット」）が実際にボタンとして表示される文字です。
+					</p>
+					<p>
+						&lt;input&gt;タグのtype属性値に「button」を記述した場合、フォーム用以外の様々なボタンを自由に作成することができます。　ただし、JavaScript等と合わせて使用する必要があります。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						name属性：ボタンに名前をつける
+					</p>
+					<p>
+						value属性：ボタンの値を指定する
+					</p>
+
+					<pre class="brush: html;">
+						&lt;form&gt;
+						名前：&lt;input type=&quot;text&quot; name=&quot;名前&quot;&gt;&lt;br&gt;
+						パスワード：&lt;input type=&quot;password&quot; name=&quot;パスワード&quot;&gt;&lt;br&gt;
+						内容：&lt;textarea name=&quot;内容&quot;&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+						&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;
+						&lt;input type=&quot;reset&quot; value=&quot;リセット&quot;&gt;
+						&lt;/form&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<form>
+							名前：<input type="text" name="名前"><br>
+							パスワード：<input type="password" name="パスワード"><br>
+							内容：<textarea name="内容"></textarea><br><br>
+							<input type="submit" value="送信">
+							<input type="reset" value="リセット">
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+				<p><a href="../input.html">１つ前に戻る</a></p>
+				<p><a href="../../index.html">TOP戻る</a></p>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

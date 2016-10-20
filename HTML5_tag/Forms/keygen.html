@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>keygen</h1>
+				<div id="box">
+					<p>
+						&lt;keygen&gt;タグは、key generatorの略で、フォーム送信時にキーを発行して暗号化する際に使用します。
+					</p>
+					<p>
+						キーが発行される場合には、秘密キーと公開キーがペアで発行されます。秘密キーはローカル環境に保存され、公開キーはサーバーに送信されます。この仕組みにより、クライアント認証がより確実となり、情報送信の安全性が高まるでしょう。
+					</p>
+					<p>
+						尚、keytype属性では、暗号化の種類を指定することができますが、HTML5の仕様ではブラウザがサポートするべき暗号方式は決められていません。ブラウザによっては、どの暗号方式もサポートされていないこともありえます。
+					</p>
+					<p>
+						keytype属性で指定できる可能性のある値としては、rsaなどが挙げられます。RSAとは、公開鍵暗号方式の標準として普及している暗号アルゴリズムの名称です。RSAでは、巨大な数の素因数分解が困難なことを利用してデータを暗号化します。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						autofocus属性：オートフォーカスする
+					</p>
+					<p>
+						challenge属性：送信されるキーと一緒にパッケージする値を指定する
+					</p>
+					<p>
+						disabled属性：キーを操作不能にする
+					</p>
+					<p>
+						form属性：&lt;form&gt;要素と関連付ける
+					</p>
+					<p>
+						keytype属性：暗号化の種類を指定する（rsaなど、指定できる値はブラウザによる）
+					</p>
+					<p>
+						name属性：キーに名前を付ける
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						keygen要素は、HTML5から新たに追加された要素です。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;form action=&quot;processkey.cgi&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;
+						&lt;p&gt;&lt;keygen name=&quot;key&quot;&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;input type=submit value=&quot;キーを送信する&quot;&gt;&lt;/p&gt;
+						&lt;/form&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<form action="processkey.cgi" method="post" enctype="multipart/form-data">
+							<p><keygen name="key"></p>
+							<p><input type=submit value="キーを送信する"></p>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

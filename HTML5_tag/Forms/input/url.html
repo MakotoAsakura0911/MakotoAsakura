@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>input type="url"</h1>
+				<div id="box">
+					<p>
+						&lt;input&gt;タグのtype属性でtype=&quot;url&quot;を指定すると、URL入力欄が作成されます。
+					</p>
+					<p>
+						name属性は入力欄に名前を付ける属性ですが、&lt;form&gt;でデータが送信される際、 name属性で指定した名前と、入力された値が一組になって送信されます。
+					</p>
+					<p>
+						size属性とmaxlength属性はそれぞれ、URL入力欄の表示サイズと、入力できる最大文字数を指定します。
+					</p>
+					<p>
+						type="url"をサポートしている一般的なブラウザでは、 入力された値が「http://」で始まる妥当な絶対URLでは無い場合にバリデーションが働くようです。 ただし、HTML5の仕様では、ユーザーエージェントは妥当な絶対URL以外も入力可能にしたり、 ユーザーが入力した文字が必ず妥当な絶対URLとなるようにを自動的にエスケープすることもできるとされており、 実際にどのような動作となるかは、ユーザーの利用するユーザーエージェント次第と言えるでしょう。 type="url"を指定しておけば、必ずユーザーに正確なURLを記入してもらえるというわけではないので、 使用の際には注意してください。
+					</p>
+					<p>
+						ユーザーは空文字を入力することができます。 入力必須にする場合には、required属性を併用してください。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						name属性：フォーム部品に名前をつける
+					</p>
+					<p>
+						value属性：送信される値を指定する
+					</p>
+					<p>
+						size属性：表示文字数を指定（1以上の正の整数）
+					</p>
+					<p>
+						maxlength属性：入力できる最大文字数を指定する
+					</p>
+					<p>
+						autocomplete属性：入力候補を提示して入力内容を自動補完する（on・off・default）（初期値はdefault）
+					</p>
+					<p>
+						pattern属性：正規表現で入力値のパターンを指定する
+					</p>
+					<p>
+						placeholder属性：入力欄に初期表示する内容を指定する
+					</p>
+					<p>
+						readonly属性：ユーザーによるテキスト編集を不可にして読み取り専用にする（readonly）
+					</p>
+					<p>
+						required属性：入力必須にする
+					</p>
+					<p>
+						list属性：ユーザーに入力候補として提案するデータリストの要素を、その要素のid属性の値で指定する
+					</p>
+
+					<pre class="brush: html;">
+						&lt;form action=&quot;cgi-bin/abc.cgi&quot; method=&quot;post&quot;&gt;
+						&lt;p&gt;&lt;label&gt;URL：&lt;input type=&quot;url&quot; name=&quot;url&quot; size=&quot;30&quot; maxlength=&quot;40&quot;&gt;&lt;/label&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;input type=&quot;submit&quot; value=&quot;送信する&quot;&gt;&lt;/p&gt;
+						&lt;/form&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<form action="cgi-bin/abc.cgi" method="post">
+							<p><label>URL：<input type="url" name="url" size="30" maxlength="40"></label></p>
+							<p><input type="submit" value="送信する"></p>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+				<p><a href="../input.html">１つ前に戻る</a></p>
+				<p><a href="../../index.html">TOP戻る</a></p>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

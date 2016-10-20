@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>input type="button"</h1>
+				<div id="box">
+					<p>
+						&lt;input&gt;タグのtype属性の値にbuttonを指定すると、特に機能を持たない汎用ボタンを作成します。
+					</p>
+					<p>
+						ボタンに表示させる[前のページへ戻る]などのテキストは、value属性で指定します。 また、name属性は送信ボタンに名前を付ける属性ですが、&lt;form&gt;でデータが送信される際、 name属性で指定した名前とvalue属性の値が一組になって送信されます。
+					</p>
+					<p>
+						汎用ボタンはJavaScriptなどと組み合わせて使用されることが多いようです。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						name属性：ボタンに名前をつける
+					</p>
+					<p>
+						value属性：ボタンの値を指定する
+					</p>
+
+					<pre class="brush: html;">
+						&lt;p&gt;
+						&lt;input type=&quot;button&quot; value=&quot;前のページへ戻る&quot; onclick=&quot;history.back()&quot;&gt;
+						&lt;/p&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<p>
+							<input type="button" value="前のページへ戻る" onclick="history.back()">
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+				<p><a href="../input.html">１つ前に戻る</a></p>
+				<p><a href="../../index.html">TOP戻る</a></p>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

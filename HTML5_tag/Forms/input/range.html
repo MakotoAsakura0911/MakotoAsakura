@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>input type="range"</h1>
+				<div id="box">
+					<p>
+						&lt;input&gt;タグのtype属性でtype=&quot;range&quot;を指定すると、レンジ入力欄が作成されます。
+					</p>
+					<p>
+						ここで言うレンジ入力欄とは、だいたいこれくらい…といった度合いを指定するための入力欄のことです。 例えば、音声のボリューム調節や画面の明るさ調節などをイメージすると理解しやすいかもしれません。 OperaやGoogle Chromeではマウスで操作できるレンジバーのインターフェースが採用されています。
+					</p>
+					<p>
+						レンジ入力では、正確な数値は重要ではなく、ユーザーはどの程度なのかを感覚的に指定することができます。 ユーザーに正確な数値を入力してもらいたい場合には、 type属性の値にtype="number"を指定してください。
+					</p>
+					<p>
+						name属性は入力欄に名前を付ける属性ですが、&lt;form&gt;でデータが送信される際、 name属性で指定した名前と、入力された値が一組になって送信されます。
+					</p>
+					<p>
+						type="range"の場合、min属性の初期値は0、max属性の初期値は100となります。 また、step属性の初期値は1となります。 ユーザーが指定できる度合いの範囲や刻み方は強制され、ユーザーは空の値を指定することはできません。
+					</p>
+					<p>
+						レンジ入力欄の初期値は、最小値<最大値となっている場合には(最大値-最小値)/2、つまり、最小値と最大値の真ん中となります。 最大値が最小値よりも小さくなってしまっている場合には、最小値が初期値となります。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						name属性：フォーム部品に名前をつける
+					</p>
+					<p>
+						value属性：送信される値を指定する
+					</p>
+					<p>
+						autocomplete属性：入力候補を提示して入力内容を自動補完する（on・off・default）（初期値はdefault）
+					</p>
+					<p>
+						list属性：ユーザーに入力候補として提案するデータリストの要素を、その要素のid属性の値で指定する
+					</p>
+					<p>
+						max属性：入力できる最大値を指定する
+					</p>
+					<p>
+						min属性：入力できる最小値を指定する
+					</p>
+					<p>
+						step属性：入力欄で刻むステップ値を指定する（type="datetime"の場合、単位は秒、初期値は60）
+					</p>
+
+					<pre class="brush: html;">
+						&lt;form action=&quot;xxx.php&quot; method=&quot;post&quot;&gt;
+						&lt;label&gt;レンジ（type=&quot;range&quot;）:&lt;input type=&quot;range&quot; name=&quot;range&quot;&gt;&lt;/label&gt;
+						&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;
+						&lt;/form&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<form action="xxx.php" method="post">
+							<label>レンジ（type="range"）:<input type="range" name="range"></label>
+							<input type="submit" value="送信">
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+				<p><a href="../input.html">１つ前に戻る</a></p>
+				<p><a href="../../index.html">TOP戻る</a></p>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

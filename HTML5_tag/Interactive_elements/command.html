@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>command</h1>
+				<div id="box">
+					<p>
+						&lt;command&gt;タグは、操作メニューの各コマンドを指定する際に使用します。&lt;menu&gt;～&lt;/menu&gt;で全体が操作メニューであることを定義して、その子要素として&lt;command&gt;を配置してユーザーが呼び出すことのできる各コマンドを指定します。
+					</p>
+					<p>
+						type属性は、コマンドの種類を指定します。指定できるコマンドの種類は、command（通常のコマンド）、checkbox（選択式）、radio（択一式）の3種類で、初期値はcommandです。
+					</p>
+					<p>
+						label属性は、コマンドにラベル（項目名）を付けてユーザーに分かるようにします。label属性は必須属性で、空文字を指定することはできません。
+					</p>
+					<p>
+						disabled属性を指定すると、コマンドを使用不能の状態にします。
+					</p>
+					<p>
+						radiogroup属性は、type="radio"で選択肢が複数階層になっているときに、子となる選択肢リストの各グループに対して名前を付けます。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						type属性：コマンドの種類を指定する(command、checkbox、radio)
+					</p>
+					<p>
+						label属性：コマンドにラベル（項目名）を付ける（※必須属性）
+					</p>
+					<p>
+						icon属性：コマンドを表す画像を指定する
+					</p>
+					<p>
+						disabled属性：コマンドを使用不能の状態にする
+					</p>
+					<p>
+						checked属性：コマンドを選択した状態にする（type="checkbox"、または、type="radio"の時に指定可）
+					</p>
+					<p>
+						radiogroup属性：コマンドグループに名前を付ける（type="radio"の時に指定可）
+					</p>
+					<p>
+						title属性：コマンドのヒントを提供する
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						command要素は、HTML5から新たに追加された要素です。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;menu type=&quot;toolbar&quot;&gt;
+						&lt;command type=&quot;radio&quot; radiogroup=&quot;alignment&quot; checked=&quot;checked&quot; label=&quot;Left&quot; icon=&quot;images/alL.png&quot; onclick=&quot;setAlign(&#039;left&#039;)&quot;&gt;
+						&lt;command type=&quot;radio&quot; radiogroup=&quot;alignment&quot; label=&quot;Center&quot; icon=&quot;images/alC.png&quot; onclick=&quot;setAlign(&#039;center&#039;)&quot;&gt;
+						&lt;command type=&quot;radio&quot; radiogroup=&quot;alignment&quot; label=&quot;Right&quot; icon=&quot;images/alR.png&quot; onclick=&quot;setAlign(&#039;right&#039;)&quot;&gt;
+						&lt;hr&gt;
+						&lt;command type=&quot;command&quot; disabled label=&quot;Publish&quot; icon=&quot;images/pub.png&quot; onclick=&quot;publish()&quot;&gt;
+						&lt;/menu&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<menu type="toolbar">
+							<command type="radio" radiogroup="alignment" checked="checked" label="Left" icon="images/alL.png" onclick="setAlign('left')">
+							<command type="radio" radiogroup="alignment" label="Center" icon="images/alC.png" onclick="setAlign('center')">
+							<command type="radio" radiogroup="alignment" label="Right" icon="images/alR.png" onclick="setAlign('right')">
+							<hr>
+							<command type="command" disabled label="Publish" icon="images/pub.png" onclick="publish()">
+							</menu>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

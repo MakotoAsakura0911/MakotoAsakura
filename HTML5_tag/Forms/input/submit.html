@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>input type="submit"</h1>
+				<div id="box">
+					<p>
+						&lt;input&gt;タグのtype属性の値にsubmitを指定すると、フォームの送信ボタンを作成します。
+					</p>
+					<p>
+						ボタンに表示させる[送信する]などのテキストは、value属性で指定します。 また、name属性は送信ボタンに名前を付ける属性ですが、&lt;form&gt;でデータが送信される際、 name属性で指定した名前とvalue属性の値が一組になって送信されます。
+					</p>
+					<p>
+						formaction属性（送信先URL）・ formenctype属性（送信するデータの形式）・ formmethod属性（送信方法）・ formnovalidate属性（入力されたデータの妥当性を確認しない）・ formtarget属性（フォーム送信するターゲット先）は、 &lt;form&gt;の属性でも同様の指定をすることができますが、 &lt;input&gt;要素側でこれらの属性を指定すると、&lt;form&gt;の指定より優先されます。
+					</p>
+					<p>
+						formaction属性・formenctype属性・formmethod属性・formnovalidate属性・formtarget属性は、 type="submit"、または、type="image"の場合にのみ指定することができます。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						name属性：フォーム部品に名前をつける
+					</p>
+					<p>
+						value属性：ボタンの値（ボタンに表示されるテキスト）を指定する
+					</p>
+					<p>
+						formaction属性：送信先URLを指定
+					</p>
+					<p>
+						formenctype属性：送信するデータの形式を指定（application/x-www-form-urlencoded・multipart/form-data・text/plain）（初期値はapplication/x-www-form-urlencoded）
+					</p>
+					<p>
+						formmethod属性：送信方法（HTTPメソッド）を指定（get・post）（初期値はget）
+					</p>
+					<p>
+						formnovalidate属性：入力されたデータの妥当性を確認しない（formnovalidate）
+					</p>
+					<p>
+						formtarget属性：フォーム送信するターゲット先を指定（_blank・_self・_parent・_top・任意のターゲット名）
+					</p>
+
+					<pre class="brush: html;">
+						&lt;form action=&quot;cgi-bin/abc.cgi&quot; method=&quot;post&quot;&gt;
+						&lt;p&gt;
+						名前：&lt;input type=&quot;text&quot; name=&quot;namae&quot;&gt;
+						&lt;/p&gt;
+						&lt;p&gt;
+						&lt;input type=&quot;submit&quot; value=&quot;送信する&quot;&gt;
+						&lt;input type=&quot;reset&quot; value=&quot;入力内容をリセットする&quot;&gt;
+						&lt;/p&gt;
+						&lt;/form&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<form action="cgi-bin/abc.cgi" method="post">
+							<p>
+							名前：<input type="text" name="namae">
+							</p>
+							<p>
+							<input type="submit" value="送信する">
+							<input type="reset" value="入力内容をリセットする">
+							</p>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+				<p><a href="../input.html">１つ前に戻る</a></p>
+				<p><a href="../../index.html">TOP戻る</a></p>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

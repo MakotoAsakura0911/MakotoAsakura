@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>menu</h1>
+				<div id="box">
+					<p>
+						&lt;menu&gt;タグは、操作メニューを作成する際に使用します。サブメニューをメインメニューで入れ子にして、階層メニューにすることもできます。
+					</p>
+					<p>
+						&lt;menu&gt;は HTML 4では非推奨でしたが、HTML5ではコマンドのリストを示すという役割があり、&lt;command&gt;タグとの組み合わせによるユーザーメニューの作成など、使用範囲も広がるようです。
+					</p>
+					<p>
+						type属性は、宣言するメニューの種類を指定します。指定できるメニューの種類は、context（コンテキストメニュー）、toolbar（ツールバー）です。また、type属性を省略した場合にはlist（リスト状態）となり、&lt;menu&gt;要素がコマンドの単なるリストに過ぎないことを示します。
+					</p>
+					<p>
+						label属性は、メニューにラベル（項目名）を付けます。このラベルは、例えば、入れ子にされた階層メニューを、ブラウザがユーザーインターフェースとして表示する場合などに、サブメニューのラベルとして使用されます。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						type属性：メニューの種類を指定する(context、toolbar)
+					</p>
+					<p>
+						label属性：コマンドにラベル（項目名）を付ける
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						menu要素は、HTML5から新たに追加された要素です。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;menu type=&quot;toolbar&quot;&gt;
+						&lt;li&gt;
+						&lt;menu label=&quot;ファイル&quot;&gt;
+						&lt;button type=&quot;button&quot; onclick=&quot;fnew()&quot;&gt;新規作成&lt;/button&gt;
+						&lt;button type=&quot;button&quot; onclick=&quot;fopen()&quot;&gt;開く&lt;/button&gt;
+						&lt;button type=&quot;button&quot; onclick=&quot;fsave()&quot;&gt;上書き保存&lt;/button&gt;
+						&lt;button type=&quot;button&quot; onclick=&quot;fsaveas()&quot;&gt;名前を付けて保存&lt;/button&gt;
+						&lt;/menu&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+						&lt;menu label=&quot;編集&quot;&gt;
+						&lt;button type=&quot;button&quot; onclick=&quot;ecopy()&quot;&gt;コピー&lt;/button&gt;
+						&lt;button type=&quot;button&quot; onclick=&quot;ecut()&quot;&gt;切り取り&lt;/button&gt;
+						&lt;button type=&quot;button&quot; onclick=&quot;epaste()&quot;&gt;貼り付け&lt;/button&gt;
+						&lt;/menu&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+						&lt;menu label=&quot;ヘルプ&quot;&gt;
+						&lt;li&gt;&lt;a href=&quot;help.html&quot;&gt;ヘルプ&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;about.html&quot;&gt;このウェブサイトについて&lt;/a&gt;&lt;/li&gt;
+						&lt;/menu&gt;
+						&lt;/li&gt;
+						&lt;/menu&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<menu type="toolbar">
+							<li>
+							<menu label="ファイル">
+							<button type="button" onclick="fnew()">新規作成</button>
+							<button type="button" onclick="fopen()">開く</button>
+							<button type="button" onclick="fsave()">上書き保存</button>
+							<button type="button" onclick="fsaveas()">名前を付けて保存</button>
+							</menu>
+							</li>
+							<li>
+							<menu label="編集">
+							<button type="button" onclick="ecopy()">コピー</button>
+							<button type="button" onclick="ecut()">切り取り</button>
+							<button type="button" onclick="epaste()">貼り付け</button>
+							</menu>
+							</li>
+							<li>
+							<menu label="ヘルプ">
+							<li><a href="help.html">ヘルプ</a></li>
+							<li><a href="about.html">このウェブサイトについて</a></li>
+							</menu>
+							</li>
+							</menu>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>input type="hidden"</h1>
+				<div id="box">
+					<p>
+						&lt;input&gt;タグのtype属性でtype=&quot;hidden&quot;を指定すると、 ブラウザ上に表示されない非表示データを送信することができます。 隠しデータとも呼ばれますが、完全に隠しきれているわけではなく、HTMLソースを表示すれば見ることができるので注意してください。
+					</p>
+					<p>
+						name属性は非表示データに名前を付ける属性ですが、&lt;form&gt;でデータが送信される際、 name属性で指定した名前とvalue属性で指定した値が一組になって送信されます。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						name属性：フォーム部品に名前をつける
+					</p>
+					<p>
+						value属性：送信される値を指定する
+					</p>
+
+					<pre class="brush: html;">
+						&lt;form action=&quot;cgi-bin/abc.cgi&quot; method=&quot;post&quot;&gt;
+						&lt;p&gt;
+						名前：かえる&lt;br&gt;
+						評価：良い&lt;br&gt;
+						理由：面白い
+						&lt;/p&gt;
+						&lt;p&gt;
+						&lt;input type=&quot;hidden&quot; name=&quot;userid&quot; value=&quot;12345&quot;&gt;
+						&lt;input type=&quot;hidden&quot; name=&quot;hyouka&quot; value=&quot;good&quot;&gt;
+						&lt;input type=&quot;hidden&quot; name=&quot;riyu&quot; value=&quot;1&quot;&gt;
+						&lt;input type=&quot;submit&quot; value=&quot;上記内容で送信する&quot;&gt;
+						&lt;/p&gt;
+						&lt;/form&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<form action="cgi-bin/abc.cgi" method="post">
+							<p>
+							名前：かえる<br>
+							評価：良い<br>
+							理由：面白い
+							</p>
+							<p>
+							<input type="hidden" name="userid" value="12345">
+							<input type="hidden" name="hyouka" value="good">
+							<input type="hidden" name="riyu" value="1">
+							<input type="submit" value="上記内容で送信する">
+							</p>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+				<p><a href="../input.html">１つ前に戻る</a></p>
+				<p><a href="../../index.html">TOP戻る</a></p>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

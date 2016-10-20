@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>input</h1>
+				<div id="box">
+					<p>
+						&lt;input&gt;タグは、フォーム（&lt;form&gt;～&lt;/form&gt;）を構成する様々な入力部品を作成する際に使用します。
+					</p>
+
+					<h3>フォーム部品の種類を指定するtype属性</h3>
+					<p>
+						type属性は、フォーム部品の種類を指定する際に使用します。 &lt;input&gt;要素は、type属性にどのような値を指定するかによって、 一行テキストボックス・チェックボックス・ラジオボタン・送信ボタン・リセットボタン等、 フォーム部品の種類を指定し分けることができます。 type属性の初期値は、type=&quot;text&quot;（一行テキストボックス）です。
+					</p>
+
+					<h3>type属性の値</h3>
+						<p><a href="input/hidden.html">type="hidden"</a>・・・画面上は表示されない隠しデータを指定する</p>
+						<p><a href="input/text.html">type="text"</a>・・・一行テキストボックスを作成する（初期値）</p>
+						<p><a href="input/search.html">type="search"</a>・・・検索テキストの入力欄を作成する</p>
+						<p><a href="input/tel.html">type="tel"</a>・・・電話番号の入力欄を作成する</p>
+						<p><a href="input/url.html">type="url"</a>・・・URLの入力欄を作成する</p>
+						<p><a href="input/email.html">type="email"</a>・・・メールアドレスの入力欄を作成する</p>
+						<p><a href="input/password.html">type="password"</a>・・・パスワード入力欄を作成する
+</p>
+						<p><a href="input/datetime.html">type="datetime"</a>・・・UTC（協定世界時）による日時の入力欄を作成する</p>
+						<p><a href="input/date.html">type="date"</a>・・・日付の入力欄を作成する</p>
+						<p><a href="input/month.html">type="month"</a>・・・月の入力欄を作成する</p>
+						<p><a href="input/week.html">type="week"</a>・・・週の入力欄を作成する</p>
+						<p><a href="input/time.html">type="time"</a>・・・時間の入力欄を作成する</p>
+						<p><a href="input/datetime-local.html">type="datetime-local"</a>・・・UTC（協定世界時）によらないローカル日時の入力欄を作成する</p>
+						<p><a href="input/number.html">type="number"</a>・・・数値の入力欄を作成する</p>
+						<p><a href="input/range.html">type="range"</a>・・・レンジの入力欄を作成する</p>
+						<p><a href="input/color.html">type="color"</a>・・・色の入力欄を作成する</p>
+						<p><a href="input/checkbox.html">type="checkbox"</a>・・・チェックボックスを作成する</p>
+						<p><a href="input/radio.html">type="radio"</a>・・・ラジオボタンを作成する</p>
+						<p><a href="input/file.html">type="file"</a>・・・サーバーへファイルを送信する</p>
+						<p><a href="input/submit.html">type="submit"</a>・・・送信ボタンを作成する</p>
+						<p><a href="input/image.html">type="image"</a>・・・画像ボタンを作成する</p>
+						<p><a href="input/reset.html">type="reset"</a>・・・リセットボタンを作成する</p>
+						<p><a href="input/button.html">type="button"</a>・・・汎用ボタンを作成する</p>
+
+						<p>
+							HTML5では、input要素のtype属性に指定できる値の種類が増えています。 それぞれの値を指定した場合、例えば、&lt;input type=&quot;email&quot;&gt;を指定すると、 この属性値をサポートしているFirefox4・Opera10・Google Chromeなどのブラウザでは、 送信ボタンを押したときに入力されている値がメールアドレスとして妥当かどうかチェックしてくれます。
+						</p>
+						<p>
+							以下は、HTML5で&lt;input&gt;要素のtype属性に追加される値を並べたサンプルソースです。 これらの値を比較的よくサポートしているOperaでは、 &lt;input type=&quot;date&quot;&gt;などの日付型の値を指定するとカレンダー入力になったり、 &lt;input type=&quot;range&quot;&gt;でレンジ入力を指定すると、マウスで操作できるレンジバーが表示されるなど、 ユーザーの入力補助となるインターフェースが拡張されています。
+						</p>
+
+						<h3>●使用例(type属性)</h3>
+						<pre class="brush: html;">
+							&lt;form action=&quot;xxx.php&quot; method=&quot;post&quot;&gt;&lt;label&gt;メール（type=&quot;email&quot;）:&lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;&lt;/label&gt;&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;&lt;/form&gt;
+							&lt;form action=&quot;xxx.php&quot; method=&quot;post&quot;&gt;&lt;label&gt;URL（type=&quot;url&quot;）:&lt;input type=&quot;url&quot; name=&quot;url&quot;&gt;&lt;/label&gt;&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;&lt;/form&gt;
+							&lt;form action=&quot;xxx.php&quot; method=&quot;post&quot;&gt;&lt;label&gt;検索（type=&quot;search&quot;）:&lt;input type=&quot;search&quot; name=&quot;search&quot;&gt;&lt;/label&gt;&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;&lt;/form&gt;
+							&lt;form action=&quot;xxx.php&quot; method=&quot;post&quot;&gt;&lt;label&gt;電話（type=&quot;telephone&quot;）:&lt;input type=&quot;tel&quot; name=&quot;tel&quot;&gt;&lt;/label&gt;&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;&lt;/form&gt;
+							&lt;form action=&quot;xxx.php&quot; method=&quot;post&quot;&gt;&lt;label&gt;数値（type=&quot;number&quot;）:&lt;input type=&quot;number&quot; name=&quot;number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;&lt;/form&gt;
+							&lt;form action=&quot;xxx.php&quot; method=&quot;post&quot;&gt;&lt;label&gt;日付（type=&quot;date&quot;）:&lt;input type=&quot;date&quot; name=&quot;date&quot;&gt;&lt;/label&gt;&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;&lt;/form&gt;
+							&lt;form action=&quot;xxx.php&quot; method=&quot;post&quot;&gt;&lt;label&gt;日時（type=&quot;datetime&quot;）:&lt;input type=&quot;datetime&quot; name=&quot;datetime&quot;&gt;&lt;/label&gt;&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;&lt;/form&gt;
+							&lt;form action=&quot;xxx.php&quot; method=&quot;post&quot;&gt;&lt;label&gt;ローカル日時（type=&quot;datetime-local&quot;）:&lt;input type=&quot;datetime-local&quot; name=&quot;datetime-local&quot;&gt;&lt;/label&gt;&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;&lt;/form&gt;
+							&lt;form action=&quot;xxx.php&quot; method=&quot;post&quot;&gt;&lt;label&gt;月（type=&quot;month&quot;）:&lt;input type=&quot;month&quot; name=&quot;month&quot;&gt;&lt;/label&gt;&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;&lt;/form&gt;
+							&lt;form action=&quot;xxx.php&quot; method=&quot;post&quot;&gt;&lt;label&gt;週（type=&quot;week&quot;）:&lt;input type=&quot;week&quot; name=&quot;week&quot;&gt;&lt;/label&gt;&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;&lt;/form&gt;
+							&lt;form action=&quot;xxx.php&quot; method=&quot;post&quot;&gt;&lt;label&gt;時間（type=&quot;time&quot;）:&lt;input type=&quot;time&quot; name=&quot;time&quot;&gt;&lt;/label&gt;&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;&lt;/form&gt;
+							&lt;form action=&quot;xxx.php&quot; method=&quot;post&quot;&gt;&lt;label&gt;レンジ（type=&quot;range&quot;）:&lt;input type=&quot;range&quot; name=&quot;range&quot;&gt;&lt;/label&gt;&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;&lt;/form&gt;
+							&lt;form action=&quot;xxx.php&quot; method=&quot;post&quot;&gt;&lt;label&gt;色（type=&quot;color&quot;）:&lt;input type=&quot;color&quot; name=&quot;color&quot;&gt;&lt;/label&gt;&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;&lt;/form&gt;
+						</pre>
+
+						<div id="Display">
+							<p>ブラウザ表示↓↓</p>
+							<div id="Display_box">
+								<form action="xxx.php" method="post"><label>メール（type="email"）:<input type="email" name="email"></label><input type="submit" value="送信"></form>
+								<form action="xxx.php" method="post"><label>URL（type="url"）:<input type="url" name="url"></label><input type="submit" value="送信"></form>
+								<form action="xxx.php" method="post"><label>検索（type="search"）:<input type="search" name="search"></label><input type="submit" value="送信"></form>
+								<form action="xxx.php" method="post"><label>電話（type="telephone"）:<input type="tel" name="tel"></label><input type="submit" value="送信"></form>
+								<form action="xxx.php" method="post"><label>数値（type="number"）:<input type="number" name="number"></label><input type="submit" value="送信"></form>
+								<form action="xxx.php" method="post"><label>日付（type="date"）:<input type="date" name="date"></label><input type="submit" value="送信"></form>
+								<form action="xxx.php" method="post"><label>日時（type="datetime"）:<input type="datetime" name="datetime"></label><input type="submit" value="送信"></form>
+								<form action="xxx.php" method="post"><label>ローカル日時（type="datetime-local"）:<input type="datetime-local" name="datetime-local"></label><input type="submit" value="送信"></form>
+								<form action="xxx.php" method="post"><label>月（type="month"）:<input type="month" name="month"></label><input type="submit" value="送信"></form>
+								<form action="xxx.php" method="post"><label>週（type="week"）:<input type="week" name="week"></label><input type="submit" value="送信"></form>
+								<form action="xxx.php" method="post"><label>時間（type="time"）:<input type="time" name="time"></label><input type="submit" value="送信"></form>
+								<form action="xxx.php" method="post"><label>レンジ（type="range"）:<input type="range" name="range"></label><input type="submit" value="送信"></form>
+								<form action="xxx.php" method="post"><label>色（type="color"）:<input type="color" name="color"></label><input type="submit" value="送信"></form>
+							</div>
+						</div>
+
+					<h3>属性</h3>
+					<p>
+						accept属性：type="file"の場合に、どのタイプのファイルがサーバ側で受け取ることができるかを指定
+					</p>
+					<p>
+						alt属性：type="image"の場合に、画像の代替テキストを指定（type="image"の場合には必須属性）
+					</p>
+					<p>
+						autocomplete属性：入力候補を提示して入力内容を自動補完する（on・off・default）（初期値はdefault）
+					</p>
+					<p>
+						autofocus属性：自動フォーカスを指定する（autofocus）
+					</p>
+					<p>
+						checked属性：ラジオボタンやチェックボックスをあらかじめチェック済みにする（checked）
+					</p>
+					<p>
+						disabled属性：操作を無効にする（disabled）
+					</p>
+					<p>
+						form属性：どのフォームと関連付けるかを&lt;form&gt;のid名で指定
+					</p>
+					<p>
+						formaction属性：送信先URLを指定
+					</p>
+					<p>
+						formenctype属性：送信するデータの形式を指定（application/x-www-form-urlencoded・multipart/form-data・text/plain）（初期値はapplication/x-www-form-urlencoded）
+					</p>
+					<p>
+						formmethod属性：送信方法（HTTPメソッド）を指定（get・post）（初期値はget）
+					</p>
+					<p>
+						formnovalidate属性：入力されたデータの妥当性を確認しない（formnovalidate）
+					</p>
+					<p>
+						formtarget属性：フォーム送信するターゲット先を指定（_blank・_self・_parent・_top・任意のターゲット名）
+					</p>
+					<p>
+						height属性：type="image"の場合に、画像の高さを指定
+					</p>
+					<p>
+						list属性：ユーザーに入力候補として提案するデータリストの要素を、その要素のid属性の値で指定する
+					</p>
+					<p>
+						max属性：入力できる最大値を指定する
+					</p>
+					<p>
+						maxlength属性：入力可能な最大文字数を指定
+					</p>
+					<p>
+						min属性：入力できる最小値を指定する
+					</p>
+					<p>
+						multiple属性：複数の値を入力・選択できるようにする
+					</p>
+					<p>
+						name属性：フォーム部品に名前をつける
+					</p>
+					<p>
+						pattern属性：正規表現で入力値のパターンを指定する
+					</p>
+					<p>
+						placeholder属性：入力欄に初期表示する内容を指定する
+					</p>
+					<p>
+						readonly属性：ユーザーによるテキスト編集を不可にして読み取り専用にする（readonly）
+					</p>
+					<p>
+						required属性：入力必須にする
+					</p>
+					<p>
+						size属性：表示文字数を指定（1以上の正の整数）
+					</p>
+					<p>
+						src属性：type="image"の場合に、画像ファイルのURLを指定する（type="image"の場合には必須属性）
+					</p>
+					<p>
+						step属性：入力欄で刻むステップ値を指定する
+					</p>
+					<p>
+						type属性：フォーム部品の種類を指定する（初期値はtext）
+					</p>
+					<p>
+						value属性：値を指定
+					</p>
+					<p>
+						width属性：type="image"の場合に、画像の幅を指定
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						HTML4.01では、input要素には揃え位置を指定するalign属性が、非推奨とされながらも用意されていました。 HTML5では、input要素のalign属性は廃止されています。 揃え位置の指定にはCSSを使用してください。
+					</p>
+					<p>
+						一方で、HTML5では、input要素に新しく autocomplete属性・ autofocus属性・ form属性・ formaction属性・ formenctype属性・ formmethod属性・ formnovalidate属性・ formtarget属性・ height属性・ list属性・ max属性・ min属性・ multiple属性・ pattern属性・ placeholder属性・ required属性・ step属性・ width属性 が追加されています。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;form action=&quot;xxxxx.php&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;
+						&lt;p&gt;&lt;label&gt;名前：&lt;input type=&quot;text&quot; name=&quot;name&quot; size=&quot;30&quot; maxlength=&quot;20&quot;&gt;&lt;/label&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;label&gt;パスワード：&lt;input type=&quot;password&quot; name=&quot;pass&quot; size=&quot;6&quot; maxlength=&quot;4&quot;&gt;&lt;/label&gt;&lt;/p&gt;
+						&lt;p&gt;学年：
+						&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;gakunen&quot; value=&quot;1&quot;&gt;１年生&lt;/label&gt;
+						&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;gakunen&quot; value=&quot;2&quot;&gt;２年生&lt;/label&gt;
+						&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;gakunen&quot; value=&quot;3&quot;&gt;３年生&lt;/label&gt;
+						&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;gakunen&quot; value=&quot;4&quot;&gt;４年生&lt;/label&gt;
+						&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;gakunen&quot; value=&quot;5&quot;&gt;５年生&lt;/label&gt;
+						&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;gakunen&quot; value=&quot;6&quot;&gt;６年生&lt;/label&gt;
+						&lt;/p&gt;
+						&lt;p&gt;好きな課目：
+						&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;kamoku&quot; value=&quot;kokugo&quot;&gt;国語&lt;/label&gt;
+						&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;kamoku&quot; value=&quot;eigo&quot;&gt;英語&lt;/label&gt;
+						&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;kamoku&quot; value=&quot;sansu&quot;&gt;算数&lt;/label&gt;
+						&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;kamoku&quot; value=&quot;rika&quot;&gt;理科&lt;/label&gt;
+						&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;kamoku&quot; value=&quot;syakai&quot;&gt;社会&lt;/label&gt;
+						&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;kamoku&quot; value=&quot;taiiku&quot;&gt;体育&lt;/label&gt;
+						&lt;/p&gt;
+						&lt;p&gt;&lt;label&gt;宿題ファイル：&lt;input type=&quot;file&quot; name=&quot;syukudai&quot;&gt;&lt;/label&gt;&lt;/p&gt;
+						&lt;p&gt;
+						&lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;
+						&lt;input type=&quot;reset&quot; value=&quot;リセット&quot;&gt;
+						&lt;/p&gt;
+						&lt;/form&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<form action="xxxxx.php" method="post" enctype="multipart/form-data">
+							<p><label>名前：<input type="text" name="name" size="30" maxlength="20"></label></p>
+							<p><label>パスワード：<input type="password" name="pass" size="6" maxlength="4"></label></p>
+							<p>学年：
+							<label><input type="radio" name="gakunen" value="1">１年生</label>
+							<label><input type="radio" name="gakunen" value="2">２年生</label>
+							<label><input type="radio" name="gakunen" value="3">３年生</label>
+							<label><input type="radio" name="gakunen" value="4">４年生</label>
+							<label><input type="radio" name="gakunen" value="5">５年生</label>
+							<label><input type="radio" name="gakunen" value="6">６年生</label>
+							</p>
+							<p>好きな課目：
+							<label><input type="checkbox" name="kamoku" value="kokugo">国語</label>
+							<label><input type="checkbox" name="kamoku" value="eigo">英語</label>
+							<label><input type="checkbox" name="kamoku" value="sansu">算数</label>
+							<label><input type="checkbox" name="kamoku" value="rika">理科</label>
+							<label><input type="checkbox" name="kamoku" value="syakai">社会</label>
+							<label><input type="checkbox" name="kamoku" value="taiiku">体育</label>
+							</p>
+							<p><label>宿題ファイル：<input type="file" name="syukudai"></label></p>
+							<p>
+							<input type="submit" value="送信">
+							<input type="reset" value="リセット">
+							</p>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>

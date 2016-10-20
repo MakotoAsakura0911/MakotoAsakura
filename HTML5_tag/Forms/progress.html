@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="nofollow">
+	<title></title>
+
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../syntax/styles/shCore.css" />
+	<link rel="stylesheet" href="../syntax/styles/shCoreEclipse.css">
+	<link rel="stylesheet" href="../syntax/styles/shThemeRDark.css" type="text/css" />
+
+	<script src="js/jquery-1.11.3.min.js" /></script>
+	<script type="text/javascript" src="../syntax/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="../syntax/scripts/sourceView.js"></script>
+	<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'ソース';
+	SyntaxHighlighter.config.strings.viewSource = 'ソース表示';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'コピー　Clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation ='コピー完了';
+	SyntaxHighlighter.config.strings.print = 'プリンタ';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighter version 2.1.364';
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	</script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+	<body>
+		<article>
+			<section>
+				<h1>progress</h1>
+				<div id="box">
+					<p>
+						&lt;progress&gt;タグは、タスク完了までの進行状況を示す際に使用します。タスクがどれだけ完了したかをvalue属性で、タスク全体でどれだけ作業が必要かをmax属性で指定します。
+					</p>
+					<p>
+						value属性とmax属性が存在する場合には、どちらも0以上の数値となります。また、value属性の値は、max属性の値以下となります。単位は任意で特に決められていません。
+					</p>
+					<p>
+						上記２つの属性を使えば、タスクの進行状況を指定することはできますが、&lt;progress&gt;タグをサポートしていないブラウザを使用しているユーザーにも進行状況が分かるように、&lt;progress&gt;～&lt;/progress&gt;の中にも、テキストで進行状況を記述することが推奨されています。
+					</p>
+					<p>
+						尚、ディスク使用量の表示など、何かを計測するのに&lt;progress&gt;タグを使用するのは不適切です。このような場合には、&lt;meter&gt;タグを使用してください。
+					</p>
+					<p>
+						以下のサンプルは、ごく簡単なHTMLソースですが、JavaScriptなどと組み合わせて、より高機能なプログレスバーを作成しても良いでしょう。
+					</p>
+
+					<h3>属性</h3>
+					<p>
+						value属性：タスクがどれだけ完了したかを指定する
+					</p>
+					<p>
+						max属性：タスク全体でどれだけ作業が必要かを指定する
+					</p>
+					<p>
+						form属性：どのform要素と関連しているのかを明確に示す
+					</p>
+
+					<h2>●HTML4.01からHTML5へのバージョンアップによる変更点</h2>
+					<p>
+						progress要素は、HTML5から新たに追加された要素です。
+					</p>
+
+					<pre class="brush: html;">
+						&lt;section&gt;
+						&lt;h2&gt;動画のダウンロード&lt;/h2&gt;
+						&lt;p&gt;進行状況：&lt;progress max=&quot;100&quot;&gt;現在、動画をダウンロード中です。&lt;/progress&gt;&lt;/p&gt;
+						&lt;/section&gt;
+					</pre>
+
+					<div id="Display">
+						<p>ブラウザ表示↓↓</p>
+						<div id="Display_box">
+							<section>
+							<h2>動画のダウンロード</h2>
+							<p>進行状況：<progress max="100">現在、動画をダウンロード中です。</progress></p>
+							</section>
+						</div>
+					</div>
+
+				</div>
+
+				<a href="../index.html">戻る</a>
+
+			</section>
+		</article>
+
+
+	</body>
+
+
+</html>
