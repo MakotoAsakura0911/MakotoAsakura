@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+
+
+.content:before{
+	content: "<";
+}
+
+
+/*********** button ***********/
+
+.bg {
+    background:#dfdfdf;
+    width:100%;
+}
+
+.position_r{
+	position: relative;
+}
+
+.position_a{
+	margin: -13.5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.circle {
+	padding:50%;
+	font-size: 150%;
+	font-weight: bold;
+	text-align: center;
+	display: block;
+	border: 1px solid #fff;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	box-shadow: 0px 0px 5px rgba(000,000,000,0.5);
+	-moz-box-shadow: 0px 0px 5px rgba(000,000,000,0.5);
+	-webkit-box-shadow: 0px 0px 5px rgba(000,000,000,0.5);
+	transition: background-color 0.15s ease-in;
+	-webkit-transition: background-color 0.15s ease-in;
+}
+
+.circle span{
+	color: #fff;
+}
+
+.wr-left-top {
+    background:#E9872E;
+	margin: 10% 7% 10% 13%;
+    float:left;
+    width:30%;
+}
+.wr-left-top .circle {
+    background:#FEA700;
+}
+
+.wr-left-top .circle:hover{
+	background: #ffc574;
+}
+
+.wr-right-top {
+    background:#93B8CA;
+	margin: 10% 13% 10% 7%;
+    float:right;
+    width:30%;
+}
+.wr-right-top .circle {
+    background:#0094FD;
+}
+
+.wr-right-top .circle:hover {
+    background:#65bfff;
+}
+
+.wr-left-center {
+    background:#F27398;
+	margin: 10% 7% 10% 13%;
+    float:left;
+    width:30%;
+}
+.wr-left-center .circle {
+    background:#D86352;
+}
+
+.wr-left-center .circle:hover {
+    background:#fea598;
+}
+
+.wr-right-center {
+    background:#79D1B0;
+	margin: 10% 13% 10% 7%;
+    float:right;
+    width:30%;
+}
+.wr-right-center .circle {
+    background:#8EC021;
+}
+
+.wr-right-center .circle:hover {
+    background:#c8eb7a;
+}
+
+.wr-left-bottom {
+    background:#F27398;
+	margin: 10% 7% 10% 13%;
+    float:left;
+    width:30%;
+}
+.wr-left-bottom .circle {
+    background:#F262A0;
+}
+
+.wr-left-bottom .circle:hover {
+    background:#ffb5d5;
+}
+
+.wr-right-bottom {
+    background:#79D1B0;
+	margin: 10% 13% 10% 7%;
+    float:right;
+    width:30%;
+}
+.wr-right-bottom .circle {
+    background:#ED8018;
+}
+
+.wr-right-bottom .circle:hover {
+    background:#ffb36b;
+}
+
+
+
+
+.btn_h {
+	width: 60px;
+	height: 38px;
+	background: #ebebeb;
+	border: 1px solid #FFF;
+	border-radius: 70px;
+	-moz-border-radius: 70px;
+	-webkit-border-radius: 70px;
+	color: #2a82a3;
+	padding: 42px 20px 20px;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 120%;
+	box-shadow: 0px 0px 5px rgba(000,000,000,0.3);
+	-moz-box-shadow: 0px 0px 5px rgba(000,000,000,0.3);
+	-webkit-box-shadow: 0px 0px 5px rgba(000,000,000,0.3);
+	transition: background-color 0.5s ease-in;
+	-webkit-transition: background-color 0.5s ease-in;
+}
+.btn_h:hover {
+	background: #2a82a3;
+	color: #FFF;
+}
