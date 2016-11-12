@@ -10,8 +10,8 @@
 /*********** button ***********/
 
 .bg {
-    background:#dfdfdf;
-    width:100%;
+	background:#dfdfdf;
+	width:100%;
 }
 
 .position_r{
@@ -46,88 +46,65 @@
 	color: #fff;
 }
 
-.wr-left-top {
-    background:#E9872E;
+.box-left {
 	margin: 10% 7% 10% 13%;
     float:left;
     width:30%;
 }
-.wr-left-top .circle {
-    background:#FEA700;
+
+.box-right {
+	margin: 10% 13% 10% 7%;
+    float:right;
+    width:30%;
 }
 
-.wr-left-top .circle:hover{
+
+.left-top {
+	background:#FEA700;
+}
+
+.left-top:hover{
 	background: #ffc574;
 }
 
-.wr-right-top {
-    background:#93B8CA;
-	margin: 10% 13% 10% 7%;
-    float:right;
-    width:30%;
-}
-.wr-right-top .circle {
-    background:#0094FD;
+.right-top{
+	background:#0094FD;
 }
 
-.wr-right-top .circle:hover {
-    background:#65bfff;
+.right-top:hover {
+	background:#65bfff;
 }
 
-.wr-left-center {
-    background:#F27398;
-	margin: 10% 7% 10% 13%;
-    float:left;
-    width:30%;
-}
-.wr-left-center .circle {
-    background:#D86352;
+.left-center{
+	background:#D86352;
 }
 
-.wr-left-center .circle:hover {
-    background:#fea598;
+.left-center:hover {
+	background:#fea598;
 }
 
-.wr-right-center {
-    background:#79D1B0;
-	margin: 10% 13% 10% 7%;
-    float:right;
-    width:30%;
-}
-.wr-right-center .circle {
-    background:#8EC021;
+.right-center{
+	background:#8EC021;
 }
 
-.wr-right-center .circle:hover {
-    background:#c8eb7a;
+.right-center:hover {
+	background:#c8eb7a;
 }
 
-.wr-left-bottom {
-    background:#F27398;
-	margin: 10% 7% 10% 13%;
-    float:left;
-    width:30%;
-}
-.wr-left-bottom .circle {
-    background:#F262A0;
+.left-bottom{
+	background:#F262A0;
 }
 
-.wr-left-bottom .circle:hover {
-    background:#ffb5d5;
+.left-bottom:hover {
+	background:#ffb5d5;
 }
 
-.wr-right-bottom {
-    background:#79D1B0;
-	margin: 10% 13% 10% 7%;
-    float:right;
-    width:30%;
-}
-.wr-right-bottom .circle {
-    background:#ED8018;
+.right-bottom{
+	background:#ED8018;
 }
 
-.wr-right-bottom .circle:hover {
-    background:#ffb36b;
+.right-bottom:hover {
+	background:#ffb36b;
 }
 
 
