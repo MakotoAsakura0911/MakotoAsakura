@@ -19,7 +19,7 @@
 }
 
 .position_a{
-	margin: -88px 0 0 -57px;
+	margin: -55px 0 0 -35px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -27,7 +27,7 @@
 
 .circle {
 	padding:50%;
-	font-size: 800%;
+	font-size: 500%;
 	font-weight: bold;
 	text-align: center;
 	display: block;
