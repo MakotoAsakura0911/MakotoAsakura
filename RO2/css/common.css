@@ -27,7 +27,7 @@
 }
 
 .position_a{
-	margin: -55px 0 0 -37px;
+	margin: -110px 0 0 -70px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -42,7 +42,7 @@
 
 .circle {
 	padding:50%;
-	font-size: 500%;
+	font-size: 950%;
 	font-weight: bold;
 	text-align: center;
 	display: block;
@@ -148,4 +148,34 @@
 .btn_h:hover {
 	background: #2a82a3;
 	color: #FFF;
+}
+
+
+@media screen and (max-width:640px){
+
+.position_a{
+	margin: -55px 0 0 -37px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+
+.circle {
+	padding:50%;
+	font-size: 500%;
+	font-weight: bold;
+	text-align: center;
+	display: block;
+	border: 1px solid #fff;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	box-shadow: 0px 0px 5px rgba(000,000,000,0.5);
+	-moz-box-shadow: 0px 0px 5px rgba(000,000,000,0.5);
+	-webkit-box-shadow: 0px 0px 5px rgba(000,000,000,0.5);
+	transition: background-color 0.15s ease-in;
+	-webkit-transition: background-color 0.15s ease-in;
+}
+
 }
