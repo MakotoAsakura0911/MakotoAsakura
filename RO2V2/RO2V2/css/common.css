@@ -1,0 +1,382 @@
+@charset "utf-8";
+
+
+/* clearfix */
+.cfx:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+.content:before{
+	content: "<";
+}
+
+body{
+	background-color: #9ad9ea;
+}
+
+article{
+	margin-top: 10%;
+}
+
+/***************************
+header
+*****************************/
+#m-title{
+	margin-top: 1.5%;
+	text-align: center;
+	font-size: 3em;
+	line-height: 1;
+	color: #fff;
+}
+
+.navbar-brand{
+	padding: 3% 1%;
+	font-size: 2em;
+}
+
+.navbar-header{
+	width: 100%;
+}
+
+/***************************
+button
+*****************************/
+.border-bottom{
+	border-bottom: solid 1.5px #aaa;
+}
+
+.red{
+	color: #d60000;
+}
+
+.bule{
+	color: #5ad9fc;
+}
+
+.item_1-m{
+	width: 50%;
+	margin: 2% 0;
+	padding: 0 2%;
+	float: left;
+}
+
+.item_1-m h4{
+	font-size: 1.8em;
+	float: left;
+}
+
+.item_1-m span{
+	font-size: 1.8em;
+	margin-left: 35%;
+	line-height: 1.8;
+}
+
+.box_in{
+	border-bottom: solid 1.5px #aaa;
+}
+.box_in span{
+	margin-left: 5%;
+	font-size: 1.5em;
+}
+.box_in span.right{
+	margin-left: 30%;
+	font-size: 1.5em;
+}
+
+
+.item_1{
+	width: 25%;
+	margin: 2% 0;
+	padding: 0 2%;
+	float: left;
+	border-left: solid 1.5px #aaa;
+}
+
+.item_1 span{
+	font-size: 1.8em;
+	text-align: center;
+	line-height: 1.8;
+	display: block;
+}
+
+.item_1 .box_in span{
+	font-size: 1.5em;
+	text-align: center;
+	display: block;
+}
+
+
+.item_2{
+	width: 38%;
+	margin: 2.5% 6%;
+	float: left;
+	border-bottom: solid 1.5px #aaa;
+}
+
+.item_2 h4{
+	font-size: 1.8em;
+	float: left;
+}
+
+.item_2 span{
+	font-size: 1.8em;
+	margin-left: 40%;
+	line-height: 1.8;
+}
+
+
+
+.item_3{
+	width: 33%;
+	float: left;
+}
+
+
+
+.contbox{
+	width: auto;
+	margin: 2%;
+	padding: 2%;
+	border: solid 5px #aaa;
+	border-radius: 15px;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+.contbox h2{
+	margin: 0;
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 1.5;
+	border-bottom: solid 2px #aaa;
+}
+
+.box{
+	margin: 10%;
+}
+
+.bg {
+	margin-top: 25%;
+	background:#dfdfdf;
+	width:100%;
+}
+
+.position_r{
+	position: relative;
+}
+
+.position_a{
+	margin: -95px 0 0 -55px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.position_h3{
+	width: 100%;
+	font-family: 'Yu Gothic';
+	font-weight: 100;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+}
+
+.circle {
+	padding:50%;
+	font-size: 750%;
+	font-weight: bold;
+	text-align: center;
+	display: block;
+	border: 1px solid #fff;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.4), 5px 5px 10px rgba(255,255,255,0.3) inset, -5px -5px 10px rgba(255,255,255,0.3) inset;
+/*
+	box-shadow: 0px 0px 5px rgba(000,000,000,0.5);
+	-moz-box-shadow: 0px 0px 5px rgba(000,000,000,0.5);
+	-webkit-box-shadow: 0px 0px 5px rgba(000,000,000,0.5);
+*/
+	transition: background-color 0.15s ease-in;
+	-webkit-transition: background-color 0.15s ease-in;
+}
+
+.circle:hover{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.1), 5px 5px 10px rgba(255,255,255,0.3) inset, -5px -5px 10px rgba(255,255,255,0.3) inset;
+}
+
+
+
+.circle span{
+	color: #fff;
+}
+
+
+
+/***************************
+button_color
+*****************************/
+.left-top {
+	background:#FEA700;
+}
+
+.left-top:hover{
+	background: #ffc574;
+}
+
+.right-top{
+	background:#0094FD;
+}
+
+.right-top:hover {
+	background:#65bfff;
+}
+
+.left-center{
+	background:#D86352;
+}
+
+.left-center:hover {
+	background:#fea598;
+}
+
+.right-center{
+	background:#8EC021;
+}
+
+.right-center:hover {
+	background:#c8eb7a;
+}
+
+.left-bottom{
+	background:#F262A0;
+}
+
+.left-bottom:hover {
+	background:#ffb5d5;
+}
+
+.right-bottom{
+	background:#ED8018;
+}
+
+.right-bottom:hover {
+	background:#ffb36b;
+}
+
+
+/***************************
+
+*****************************/
+
+
+.btn_h {
+	width: 60px;
+	height: 38px;
+	background: #ebebeb;
+	border: 1px solid #FFF;
+	color: #2a82a3;
+	padding: 42px 20px 20px;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 120%;
+	box-shadow: 0px 0px 5px rgba(000,000,000,0.3);
+	-moz-box-shadow: 0px 0px 5px rgba(000,000,000,0.3);
+	-webkit-box-shadow: 0px 0px 5px rgba(000,000,000,0.3);
+	transition: background-color 0.5s ease-in;
+	-webkit-transition: background-color 0.5s ease-in;
+}
+.btn_h:hover {
+	background: #2a82a3;
+	color: #FFF;
+}
+
+
+@media screen and (max-width:640px){
+
+.position_a{
+	margin: -55px 0 0 -37px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+
+.circle {
+	padding:50%;
+	font-size: 500%;
+	font-weight: bold;
+	text-align: center;
+	display: block;
+	border: 1px solid #fff;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.4), 5px 5px 10px rgba(255,255,255,0.3) inset, -5px -5px 10px rgba(255,255,255,0.3) inset;
+/*
+	box-shadow: 0px 0px 5px rgba(000,000,000,0.5);
+	-moz-box-shadow: 0px 0px 5px rgba(000,000,000,0.5);
+	-webkit-box-shadow: 0px 0px 5px rgba(000,000,000,0.5);
+*/
+	transition: background-color 0.15s ease-in;
+	-webkit-transition: background-color 0.15s ease-in;
+}
+
+
+}
+
+
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}

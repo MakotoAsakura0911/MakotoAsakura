@@ -1,0 +1,207 @@
+@charset "UTF-8";
+#content3 {
+  position: relative;
+  height: 100%;
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  text-align: center;
+  color: #fff;
+}
+#content3 .swiper-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 80vh;
+}
+#content3 .swiper-container .swiper-slide {
+  overflow-y: scroll;
+  padding: 0 5em;
+}
+@media screen and (max-width: 767px) {
+  #content3 .swiper-container .swiper-slide {
+    overflow-y: hidden;
+    padding: 0 3em;
+  }
+}
+@media screen and (max-width: 479px) {
+  #content3 .swiper-container .swiper-slide {
+    padding: 0 2em;
+  }
+}
+#content3 .cont3-title {
+  text-align: center;
+}
+#content3 .cont3-title h2 {
+  padding: 1em 0;
+  font-size: 65px;
+  font-size: 4.0625rem;
+  font-weight: lighter;
+}
+@media screen and (max-width: 999px) {
+  #content3 .cont3-title h2 {
+    padding: 1em 0 2em;
+    font-size: 62px;
+    font-size: 3.875rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #content3 .cont3-title h2 {
+    font-size: 45px;
+    font-size: 2.8125rem;
+  }
+}
+@media screen and (max-width: 479px) {
+  #content3 .cont3-title h2 {
+    padding: 1em 0;
+    font-size: 42px;
+    font-size: 2.625rem;
+  }
+}
+#content3 .cont3-body {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title-text {
+  font-size: 40px;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  text-shadow: 5px 5px 10px rgba(200, 200, 200, 0.5);
+}
+@media screen and (max-width: 999px) {
+  .title-text {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .title-text {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 479px) {
+  .title-text {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
+
+/*--------------------------------------------------------
+	「motif-1」の部分
+---------------------------------------------------------*/
+.cont3-text {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5em;
+  letter-spacing: 0.8pt;
+  /*text-shadow: 5px 5px 10px rgba(200,200,200,0.5);*/
+}
+@media screen and (max-width: 999px) {
+  .cont3-text {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cont3-text {
+    font-size: 13px;
+    font-size: 0.8125rem;
+  }
+}
+@media screen and (max-width: 479px) {
+  .cont3-text {
+    font-size: 11px;
+    font-size: 0.6875rem;
+  }
+}
+
+.cont3-text-box1 {
+  text-align: left;
+}
+@media screen and (max-width: 999px) {
+  .cont3-text-box1 {
+    text-align: center;
+  }
+}
+
+.cont3-text-box2 {
+  margin: 2em auto;
+}
+@media screen and (max-width: 999px) {
+  .cont3-text-box2 {
+    margin: 5em auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cont3-text-box2 {
+    margin: 2em auto;
+  }
+}
+
+.cont3-text-box3 {
+  text-align: right;
+}
+@media screen and (max-width: 999px) {
+  .cont3-text-box3 {
+    text-align: center;
+  }
+}
+
+/*--------------------------------------------------------
+	「motif-2」の部分
+---------------------------------------------------------*/
+.cont3-text2 {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5em;
+  letter-spacing: 0.8pt;
+}
+@media screen and (max-width: 999px) {
+  .cont3-text2 {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cont3-text2 {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 479px) {
+  .cont3-text2 {
+    font-size: 11px;
+    font-size: 0.6875rem;
+  }
+}
+
+.cont3-text-box4 {
+  margin: 1em 0 3em 0;
+}
+@media screen and (max-width: 999px) {
+  .cont3-text-box4 {
+    margin: 1em 0 4em 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cont3-text-box4 {
+    margin: 2em 0 2em 0;
+  }
+}
+
+.cont3-text-box5 .margin {
+  margin: 4em 0 0 0;
+}
+@media screen and (max-width: 999px) {
+  .cont3-text-box5 .margin {
+    margin: 3em 0 0 0;
+  }
+}
+
+/*# sourceMappingURL=cont3.css.map */

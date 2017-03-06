@@ -1,0 +1,260 @@
+@charset "UTF-8";
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div#Content2{
+	width: 430px;
+}
+
+/*ここからEvent Name*/
+
+.midasi{
+	margin: 16px 0 0 0;
+	text-align: center;
+	color: #FFF;
+}
+
+div#wrapper{
+	height: 430px;
+}
+
+
+#Title{
+	font-size: 30px;
+	color: #FFF;
+}
+
+p{
+	color: #FFF;
+}
+
+div#text{
+	font-size: 21px;
+	margin: 0 0 0 150px;
+	font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+	text-shadow: 3px 3px 3px #000;
+	float:left;
+	
+}
+
+div#text div#text1{
+	margin: 50px 0 0 0;
+	line-height: 33px;
+}
+
+
+
+div#text div#text2{
+	margin: 50px 0 0 0;
+	line-height: 33px;
+}
+
+#kiiro{
+	color: #fef500;	
+}
+
+div#text div#text3{
+	margin: 10px 0 0 0;
+}
+
+div#text div#text4{
+	margin: 10px 0 0 0;
+}
+
+div#image{
+	margin: 110px 0 0 130px;
+	float:left;
+	
+}
+
+.relative   {  
+    position: relative;  
+}  
+/*ここまで*/
+
+/*ここからCloth Image*/
+
+div#wrapper2{
+	height: 430px;
+}
+
+.relative   {  
+    position: relative;  
+}
+
+#image_all{
+	
+}
+
+#image2{
+	position: absolute;
+	top: 0%;
+	left: 14%;
+	float: left;
+}
+
+#image2 img{
+	width: 140px;
+	height: 187px;
+}
+
+#image3{
+	position: absolute;
+	top: 10%;
+	left: 33%;
+	float:left;
+}
+
+#image3 img{
+	width: 120px;
+	height: 161px;
+}
+
+#text5{
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	font-size: 21px;
+	color: #FFF;
+	font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+	text-shadow: 5px 5px 5px #000;
+	float: left;
+}
+
+#bun{
+	
+}
+
+#bun2{
+	margin: 0 0 0 40px;
+}
+
+#image_all2{
+
+}
+
+#image4{
+	position: absolute;
+	top: 50%;
+	left: 14%;
+	float: left;
+}
+
+#image4 img{
+	width: 140px;
+	height: 187px;
+}
+
+#image5{
+	position: absolute;
+	top: 56%;
+	left: 33%;
+	float: left;
+}
+
+#image5 img{
+	width: 120px;
+	height: 161px;
+}
+
+#image6{
+	position: absolute;
+	top: 31.3%;
+	left: 51%;
+	float: left;
+}
+
+#image6 img{
+	width: 200px;
+	height: 268px;
+}
+
+/*ここまで*/
+
+
+
+
+/*ここからBrand Name*/
+
+div#wrapper3{
+	height: 430px;
+}
+
+.relative   {  
+    position: relative;
+}
+
+#text6{
+	font-size: 23px;
+	font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+	text-shadow: 3px 3px 3px #000;
+	
+	
+}
+
+
+#text7{
+	position: absolute;
+	top: 3%;
+	left: 45%;
+}
+
+#text8{
+	position: absolute;
+	top: 22%;
+	left: 23.7%;
+}
+
+#text9{
+	
+	position: absolute;
+	top: 32%;
+	left: 11%;
+}
+
+
+#image7{
+	position: absolute;
+	top: 20%;
+	left: 38%;
+}
+
+
+#text10{
+	line-height: 35px;
+	position: absolute;
+	top: 30%;
+	left: 65%;
+}
+
+#text11{
+	line-height: 35px;
+	position: absolute;
+	top: 50%;
+	left: 70%;
+}
+
+#text12{
+	line-height: 35px;
+	position: absolute;
+	top: 67%;
+	left: 15%;
+}
+
+/*ここまで*/
+
+
+
+
+
+
+
+
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}

@@ -1,0 +1,289 @@
+@charset "UTF-8";
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h2{
+	padding: 1em 0;
+	font-size: 3em;
+	font-weight: lighter;
+	font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+}
+
+div.Content5-Text {
+	padding: 2em 3em 2em;
+	font-size: 1.3em;
+	font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+	text-align: center;
+	border-radius: 5px;
+	color: #fff;
+}
+
+div.content-title {
+
+}
+
+div.content-title h2 {
+	padding: 1em 0;
+	font-size: 3em;
+	font-weight: lighter;
+}
+
+div.content-title h2 .small {
+	display: block;
+	margin-top: 10px;
+	font-size: 0.5em;
+	font-weight: 200;
+}
+
+div.content-body {
+	position: relative;
+	margin: 0 5em 3em;
+}
+
+div.main-text {
+	font-size: 1.7em;
+	font-weight: lighter;
+	text-shadow: 5px 5px 10px rgba(200,200,200,0.5);
+}
+
+
+/*--------------------------------------------------------
+	「motif-1」の部分
+---------------------------------------------------------*/
+
+div.content-text {
+	font-size: 0.7em;
+	font-weight: 100;
+	line-height: 1.5em;
+	letter-spacing: 0.8pt;
+	/*text-shadow: 5px 5px 10px rgba(200,200,200,0.5);*/
+}
+
+div.content-text-box1 {
+	text-align: left;
+}
+
+div.content-text-box2 {
+	margin: 2em auto;
+}
+
+div.content-text-box3 {
+	text-align: right;
+}
+
+
+/*--------------------------------------------------------
+	「motif-2」の部分
+---------------------------------------------------------*/
+
+div.content-text2 {
+	font-size: 0.8em;
+	font-weight: 100;
+	line-height: 1.5em;
+	letter-spacing: 0.8pt;
+}
+
+div.content-text-box4 {
+	margin: 0 0 3em 0;
+}
+
+div.content-text-box5 {
+
+}
+
+div.content-text-box5 .margin {
+	margin: 2em 0 0 0;
+}
+
+
+form {
+	margin: 0 auto;
+	width: 600px;
+	padding: 1em;
+	border-radius: 1em;
+	}
+
+form #errorMsg_area {
+	height: 30px;
+}
+
+
+form #errorMsg_area p.errorMsg {
+	color: #FF0500;
+	font-weight: 700;
+}
+
+
+label {
+	display: inline-block;
+	width: 150px;
+	margin:0 0 0 10px;
+	text-align: right;
+	float:left;
+	font-size: 17px;
+	}
+
+.form-control {
+	width: 100%;
+	margin-bottom: 10px;
+	float:left;
+}
+
+
+input, textarea {
+	font: 1em sans-serif;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #999;
+	}
+
+
+input:focus, textarea:focus {
+	border-color: #000;
+	}
+
+
+textarea {
+	vertical-align: top;
+	height: 5em;
+	resize: vertical;
+	}
+
+
+.button {
+	padding: 7px 18px;
+	font-size: 16px;
+	font-family:Arial;
+	border-radius:8px;
+	border:1px solid #797979;
+	background:-moz-linear-gradient( center top, #ffffff 5%, #d6d6d6 100% );
+	background:-ms-linear-gradient( top, #ffffff 5%, #d6d6d6 100% );
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #ffffff), color-stop(100%, #d6d6d6) );
+	}
+
+
+.button:hover {
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	background:-ms-linear-gradient( top, #dfdfdf 5%, #ededed 100% );
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #dfdfdf), color-stop(100%, #ededed) );
+	}
+
+
+
+
+select,
+textarea,
+input[type="text"],
+input[type="email"]{
+	display: inline-block;
+	padding: 3px 6px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+	vertical-align: middle;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	background-color: rgba(255,255,255,0);
+	border: 2px solid #fff;
+	-webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5);
+	   -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5);
+	        box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5);
+	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+	   -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+	     -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+	        transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid {
+	color: #b94a48;
+	border-color: #ee5f5b;
+}
+
+input:focus:invalid:focus,
+textarea:focus:invalid:focus,
+select:focus:invalid:focus {
+	border-color: #e9322d;
+	-webkit-box-shadow: 0 0 6px #f8b9b7;
+	   -moz-box-shadow: 0 0 6px #f8b9b7;
+	        box-shadow: 0 0 6px #f8b9b7;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+	border-color: rgba(255, 255, 255, 0.8);
+	outline: 0;
+	outline: thin dotted \9;
+	/* IE6-9 */
+
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 255, 255, 0.8);
+	   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 255, 255, 0.8);
+	        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+input[type="file"],
+input[type="image"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"] {
+	width: auto;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+label,
+select,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+	cursor: pointer;
+}

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+.container {
+  height: 100vh;
+  padding: 0 20%;
+  box-sizing: border-box;
+}
+.container .cont_2__heading {
+  padding: 10% 0;
+  text-align: center;
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  font-size: 3.2em;
+  color: #FFF;
+}
+.container .cont_2__wrapp {
+  overflow-y: scroll;
+  height: 74vh;
+  box-sizing: border-box;
+}
+.container .cont_2__wrapp .gallery {
+  max-width: 1400px;
+  width: auto;
+}
+.container .cont_2__wrapp .gallery__link--image {
+  width: 100%;
+  padding: 2%;
+}

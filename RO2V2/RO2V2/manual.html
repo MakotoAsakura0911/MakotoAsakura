@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app="myApp">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<title>Smart_Remote_Controller</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap_v3.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme_v3.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/manual.css">
+
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/jscolor.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	//------ポンプスイッチhttps://proto.io/freebies/onoff/
+
+
+</head>
+
+<body class="">
+
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+
+					<button type="button" class="navbar-toggle collapsed"data-toggle="collapse"data-target="#navbarEexample8">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand content" href="index.html">Back</a>
+
+					<h2 id="m-title">manual</h2>
+
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+
+	<article>
+
+		<!-- Content1 -->
+			<div id="content1" class="contbox cfx">
+				<h2>Example Weather</h2>
+				<div class="item">
+					<input type="button" id="sunny" class="botan" value="" />
+				</div>
+				<div class="item">
+					<input type="button" id="rain" class="botan" value="" />
+				</div>
+				<div class="item">
+					<input type="button" id="cloudy" class="botan" value="" />
+				</div>
+				<div class="item">
+					<input type="button" id="storm" class="botan" value="" />
+				</div>
+			</div>
+
+
+		<!-- Content2 -->
+			<div id="content2" class="contbox cfx">
+				<h2>Weather Change</h2>
+
+				<div class="cfx border-bottom">
+
+					<div class="button-item_2">
+						<h4 class="button-h4">Rain</h4>
+						<div class="onoffswitch">
+							<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="Rain" checked>
+							<label class="onoffswitch-label" for="Rain">
+								<span class="onoffswitch-inner"></span>
+								<span class="onoffswitch-switch"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="button-item_2">
+						<h4 class="button-h4">Myst</h4>
+						<div class="onoffswitch">
+							<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="Myst" checked>
+							<label class="onoffswitch-label" for="Myst">
+								<span class="onoffswitch-inner"></span>
+								<span class="onoffswitch-switch"></span>
+							</label>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="cfx">
+					<h2 class="right-h2">Window Wash</h2>
+					<div class="button-item_2">
+						<h4 class="button-h4">Pump</h4>
+						<div class="onoffswitch">
+							<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="Pump" checked>
+							<label class="onoffswitch-label" for="Pump">
+								<span class="onoffswitch-inner"></span>
+								<span class="onoffswitch-switch"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<Hr Align="center" Width="100%">
+
+
+		<!-- Content3 -->
+			<div id="content3" class="contbox cfx">
+
+				<h2>LightUp</h2>
+
+				<div class="button-item_small">
+					<h4 class="button-h4_small">Terminal</h4>
+					<div class="onoffswitch_small">
+						<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="Terminal" checked>
+						<label class="onoffswitch-label" for="Terminal">
+							<span class="onoffswitch-inner_small"></span>
+							<span class="onoffswitch-switch_small"></span>
+						</label>
+					</div>
+				</div>
+				<div class="button-item_small">
+					<h4 class="button-h4_small">Runway</h4>
+					<div class="onoffswitch_small">
+						<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="Runway" checked>
+						<label class="onoffswitch-label" for="Runway">
+							<span class="onoffswitch-inner_small"></span>
+							<span class="onoffswitch-switch_small"></span>
+						</label>
+					</div>
+				</div>
+				<div class="button-item_small">
+					<h4 class="button-h4_small">City</h4>
+					<div class="onoffswitch_small">
+						<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="City" checked>
+						<label class="onoffswitch-label" for="City">
+							<span class="onoffswitch-inner_small"></span>
+							<span class="onoffswitch-switch_small"></span>
+						</label>
+					</div>
+				</div>
+
+				<form method="post" action="input_range.html">
+
+					<div class="range-item">
+						<p class="p_left">R</p>
+						<input type="range" id="red" class="slider" min="0" max="255" step="1" oninput="setRGB('bgcolor', 255, this.value, this.value)" />
+						<!--
+							<button id="bgcolor-button">Choose background</button>
+						-->
+						<span name="input2" id="input2"></span>
+					</div>
+					<div class="range-item">
+						<p class="p_left">G</p>
+						<input type="range" id="green" class="slider" min="0" max="255" step="1" oninput="setRGB('green', this.value, 255, this.value)" />
+					</div>
+					<div class="range-item">
+						<p class="p_left">B</p>
+						<input type="range" id="bule" min="0" max="255" step="1" oninput="setRGB('bule', this.value, this.value, 255)">
+					</div>
+
+				</form>
+
+			</div>
+
+	</article>
+
+<script>
+
+
+var options = {
+	valueElement: null,
+	width: 300,
+	height: 120,
+	sliderSize: 20,
+	position: 'top',
+	borderColor: '#CCC',
+	insetColor: '#CCC',
+	backgroundColor: '#202020'
+};
+
+var pickers = {};
+
+pickers.bgcolor = new jscolor('bgcolor-button', options);
+
+function update (id) {
+	document.getElementById('red').style.backgroundColor =
+		pickers.bgcolor.toHEXString();
+
+}
+
+function setRGB (id,r,g,b) {
+	pickers[id].fromRGB(r, g, b);
+	update(id);
+}
+
+</script>
+
+
+</body>
+
+</html>
