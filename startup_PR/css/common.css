@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+
+body{
+
+}
+
+img {
+	max-width: 100%;
+}
+
+header{
+
+}
+
+header #header_img {
+	width: 100%;
+}
