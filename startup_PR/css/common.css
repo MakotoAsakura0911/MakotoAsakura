@@ -47,7 +47,7 @@ h2 {
 
 h3 {
 	line-height: 1.5;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 h4 {
@@ -190,4 +190,24 @@ section #main_7 {
 .btn:active {
 	top: 3px;
 	box-shadow: none;
+}
+
+.btn:after {
+	position: absolute;
+	top: 50%;
+	right: .2em;
+	content: '';
+	margin-top: -3.4%;
+	border: 13px solid transparent;
+	border-left-color: #000;
+	transition: all .2s;
+}
+
+.btn:hover::after {
+	animation: arrow .5s;
+}
+@keyframes arrow {
+	100% {
+		transform: rotateX(360deg);
+	}
 }
