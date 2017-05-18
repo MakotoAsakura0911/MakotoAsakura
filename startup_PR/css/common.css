@@ -1,12 +1,67 @@
 @charset "utf-8";
 
+/* clearfix */
+.cfx:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* fadein */
+.fade1 {
+  opacity: 0;
+  transition: 2.5s;
+}
+
+.fade2 {
+  opacity: 0;
+  transition: 4s;
+}
+
+.fade3 {
+  opacity: 0;
+  transition: 5.5s;
+}
+
+.in {
+  opacity: 1;
+}
 
 body{
-
+	margin: 0 auto;
+	font-family:"ヒラギノ丸ゴ Pro W4", "Hiragino maru Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO","Verdana","Osaka",sans-serif;
 }
 
 img {
 	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	line-height: 1.5;
+	font-size: 2em;
+}
+
+h3 {
+	line-height: 1.5;
+	font-size: 1.5em;
+}
+
+h4 {
+	line-height: 1.5;
+	font-size: 1.3em;
+}
+
+ul {
+
+}
+
+li {
+	margin: 5% 0;
+	font-size: 1.3em;
 }
 
 header{
@@ -15,4 +70,124 @@ header{
 
 header #header_img {
 	width: 100%;
+}
+
+article {
+
+}
+
+/*   BOX   */
+.mainbox {
+	padding: 5% 0;
+}
+
+.box1 {
+	width: 25%;
+	margin: 4%;
+}
+
+.box2 {
+	width: 22%;
+	margin: 4%;
+}
+
+.w4 {
+	width: 4.5%;
+	margin: -0.5% 3% -0.5% 0;
+}
+
+.w30 {
+	width: 30%;
+}
+
+.w80 {
+	width: 80%;
+}
+
+.mB3 {
+	margin-bottom: 3%;
+}
+
+.logofont {
+	font-family: "Meiryo UI";
+}
+
+.center {
+	text-align: center;
+}
+
+section#sec_1 {
+	background-color: #f2f2f2;
+}
+
+section#sec_3 {
+	color: #fff;
+	background-color: #01b0f1;
+}
+
+section#sec_4 {
+	background-color: #fddf1a;
+}
+
+section#sec_5 {
+	background-color: #70d9ff;
+}
+
+section#sec_7 {
+	background-color: #fddf1a;
+}
+
+section #main_1 {
+	width: 80%;
+	margin: 0 auto;
+}
+
+section #main_2 {
+	width: 65%;
+	margin: 0 auto;
+}
+
+section #main_3 {
+	width: 33%;
+	margin: 4% 37%;
+}
+
+section #main_4 {
+	margin: 3%;
+}
+
+section #main_7 {
+	margin: 3%;
+}
+
+.arrow {
+	width: 5%;
+	margin-top: 12%;
+}
+
+.f_left {
+	float: left;
+}
+
+.btn {
+	padding: 3% 6%;
+	position: relative;
+	background-color: #fff;
+	border-radius: 1px;
+	color: #000;
+	line-height: 52px;
+	-webkit-transition: none;
+	transition: none;
+	font-size: 1.5em;
+	font-weight: bold;
+	box-shadow: 0 3px 0 #ccc;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+}
+.btn:hover {
+	top: -4px;
+	box-shadow: 0 7px 0 #ccc;
+}
+.btn:active {
+	top: 3px;
+	box-shadow: none;
 }
